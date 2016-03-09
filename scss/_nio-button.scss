@@ -1,0 +1,32 @@
+
+.nio-button {
+  $timing: 333ms;
+
+  border: $dist-hair solid $color-light;
+  margin: 0 $dist-large;
+  border-radius: $dist-small;
+  background-color: white;
+  color: $color-light;
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  font-size: $font-size-med;
+  font-weight: bold;
+  padding: $dist-small $dist-large;
+  position: relative;
+
+  transition: border-color $timing, background-color $timing, box-shadow $timing, color $timing;
+
+  &:hover, &:focus {
+    border-color: darken($color-red, 7.5);
+    color: white;
+    background-color: $color-red;
+    outline: 0;
+    box-shadow: 0 0 $dist-large rgba($color-red, 20);
+  }
+  &:active {
+    outline: 0;
+    border-color: $color-red;
+    background-color: lighten($color-red, 10);
+    box-shadow: none;
+    top: $dist-hair;
+  }
+}

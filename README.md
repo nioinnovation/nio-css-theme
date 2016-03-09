@@ -1,12 +1,14 @@
-# n.io Sass Helpers
+# n.io SCSS
 
-A small collection of sass helper functions for use with [node-sass](https://github.com/sass/node-sass).
+The SCSS/CSS Framework for developing n.io frontend applications. Include a collection of sass helper functions for use with [node-sass](https://github.com/sass/node-sass)
 
-## Math Functions
+## n.io SCSS Common
 
-### `pow($base, $exp)` 
+## Math Helpers
 
-Compute the `$base` to the `$exp` power. Can be used with fractional/rational numbers for either `$base` or `$exp`. 
+### `pow($base, $exp)`
+
+Compute the `$base` to the `$exp` power. Can be used with fractional/rational numbers for either `$base` or `$exp`.
 
 #### Examples
 

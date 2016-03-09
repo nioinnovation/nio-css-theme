@@ -4,6 +4,7 @@
   "description": "A collection of sass helpers for node-sass",
   "main": "index.js",
   "scripts": {
+    "build": "node-sass --functions=index.js scss/nio.scss -o dist",
     "test": "mocha"
   },
   "author": "J. Holmes",

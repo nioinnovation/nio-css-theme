@@ -1,0 +1,25 @@
+:root { font: $font-base; }
+
+h1,h2,h3,h4,h5,h6 {
+	color: $color-mid;
+	text-align: center;
+}
+strong { font-weight: 700; }
+
+h1 { font-size: $font-size-huge };
+h2 { font-size: $font-size-xxl };
+h3 { font-size: $font-size-xl };
+h4 { font-size: $font-size-lg };
+h5 { font-size: $font-size-med };
+h6 { font-size: $font-size-sm };
+
+:link, :visited {
+	text-decoration: none;
+	font-weight: 700;
+	color: inherit;
+
+	&:hover, &:active, &:focus {
+		text-decoration: underline;
+		outline: 0;
+	}
+}

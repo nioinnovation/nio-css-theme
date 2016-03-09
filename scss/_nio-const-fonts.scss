@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200:400,700);
+
+$font-base: normal normal 12pt/1.5 'Open Sans', Helvetica, Arial, sans serif;
+
+// sizes
+$ratio: $per4 * 1rem;
+$font-size-xs:   pow($ratio, -2);
+$font-size-sm:   pow($ratio, -1);
+$font-size-med:  pow($ratio,  0);
+$font-size-lg:   pow($ratio,  1);
+$font-size-xl:   pow($ratio,  2);
+$font-size-xxl:  pow($ratio,  3);
+$font-size-huge: pow($ratio,  4);

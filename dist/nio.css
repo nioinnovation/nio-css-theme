@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200:400,700);
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: inherit; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+:root {
+  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #666;
+  text-align: center; }
+
+strong {
+  font-weight: 700; }
+
+h1 {
+  font-size: 3.1748rem; }
+
+h2 {
+  font-size: 2.37841rem; }
+
+h3 {
+  font-size: 1.7818rem; }
+
+h4 {
+  font-size: 1.33484rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.74915rem; }
+
+:link, :visited {
+  text-decoration: none;
+  font-weight: 700;
+  color: inherit; }
+  :link:hover, :link:active, :link:focus, :visited:hover, :visited:active, :visited:focus {
+    text-decoration: underline;
+    outline: 0; }
+
+.nio-button {
+  border: 0.0625rem solid #ddd;
+  margin: 0 1rem;
+  border-radius: 0.25rem;
+  background-color: white;
+  color: #ddd;
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.25rem 1rem;
+  position: relative;
+  transition: border-color 333ms, background-color 333ms, box-shadow 333ms, color 333ms; }
+  .nio-button:hover, .nio-button:focus {
+    border-color: #ad1b23;
+    color: white;
+    background-color: #CE202A;
+    outline: 0;
+    box-shadow: 0 0 1rem #ce202a; }
+  .nio-button:active {
+    outline: 0;
+    border-color: #CE202A;
+    background-color: #e14049;
+    box-shadow: none;
+    top: 0.0625rem; }
