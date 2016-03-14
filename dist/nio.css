@@ -1,8 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:200:400,700);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,40 +47,192 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.nio-boxed {
+  border-radius: 0.125rem;
+  padding: 0.5rem 0.75rem; }
+
+.nio-boxed--shaded {
+  background-color: #f8f8f8; }
+
+.nio-boxed--bordered {
+  border: 0.0625rem solid #ddd; }
+
+.nio-heading, h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.04167rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
+  font-weight: 500;
+  text-transform: lowercase;
+  text-align: center; }
+
+.nio-heading--primary, h1 {
+  font-size: 3.1748rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.13228rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem; }
+
+.nio-heading--secondary, h2 {
+  font-size: 2.37841rem;
+  line-height: 3rem;
+  letter-spacing: -0.0991rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem; }
+
+.nio-heading--tertiary, h3 {
+  font-size: 1.7818rem;
+  line-height: 3rem;
+  letter-spacing: -0.07424rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem; }
+
+.nio-heading--quaternary, h4 {
+  font-size: 1.33484rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.05562rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem; }
+
+.nio-heading--quinary, h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.04167rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem; }
+
+.nio-heading--senary, h6 {
+  font-size: 0.74915rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.03121rem;
+  margin-top: 3rem;
+  margin-bottom: 4.5rem; }
+
+.nio-heading--inverted {
+  color: #fff;
+  text-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.75); }
+
+.nio-emphasis, em {
+  font-style: italic; }
+
+.nio-table, table {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100%; }
+  .nio-table > thead td, table > thead td, .nio-table > thead th, table > thead th, .nio-table > tbody td, table > tbody td, .nio-table > tbody th, table > tbody th, .nio-table > thead td, table > thead td, .nio-table > thead th, table > thead th {
+    padding: 0.5rem 0.5rem; }
+  .nio-table > thead th, table > thead th, .nio-table > tbody th, table > tbody th, .nio-table > thead th, table > thead th {
+    font-size: 0.74915rem;
+    font-weight: 600;
+    text-align: left; }
+  .nio-table > thead td, table > thead td, .nio-table > thead th, table > thead th {
+    border-bottom: 0.125rem solid #ddd; }
+  .nio-table > tbody tr:nth-child(3n+1) td, table > tbody tr:nth-child(3n+1) td, .nio-table > tbody tr:nth-child(3n+1) th, table > tbody tr:nth-child(3n+1) th {
+    border-top: 0.0625rem dotted #ddd; }
+
+.nio-table--striped > tbody tr:nth-child(odd) td, .nio-table--striped > tbody tr:nth-child(odd) th {
+  background-color: #f8f8f8; }
+
+.nio-form__row {
+  display: flex; }
+  .nio-form__row > *:not(:first-child) {
+    margin-left: 0.25rem; }
+  .nio-form__row > *:not(:last-child) {
+    margin-right: 0.25rem; }
+
+.nio-form__label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.74915rem;
+  margin-bottom: 0.25rem; }
+
+.nio-form__control, .nio-form__text-field, .nio-form__button {
+  box-sizing: border-box;
+  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
+  padding: 1rem 1rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid transparent;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem; }
+
+.nio-form__text-field {
+  width: 100%;
+  background-color: #ddd; }
+  .nio-form__text-field::placeholder {
+    font-weight: 200;
+    color: #c4c4c4; }
+  .nio-form__text-field:focus {
+    outline: 0;
+    border-color: #c4c4c4; }
+
+.nio-form__button {
+  background-color: transparent;
+  border-color: currentcolor;
+  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
+  font-weight: 600;
+  color: #CE202A;
+  padding: 1rem 1rem;
+  min-width: 20ch;
+  transition: box-shadow 300ms, transform 66ms; }
+  .nio-form__button:hover, .nio-form__button:focus {
+    outline: 0;
+    box-shadow: 0 0 0.25rem currentcolor;
+    transform: scale(1.01); }
+  .nio-form__button:active {
+    transform: translatey(0.125rem); }
+
 :root {
   font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif; }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #666;
-  text-align: center; }
-
-strong {
-  font-weight: 700; }
-
-h1 {
-  font-size: 3.1748rem; }
-
-h2 {
-  font-size: 2.37841rem; }
-
-h3 {
-  font-size: 1.7818rem; }
-
-h4 {
-  font-size: 1.33484rem; }
-
-h5 {
-  font-size: 1rem; }
-
-h6 {
-  font-size: 0.74915rem; }
-
 :link, :visited {
   text-decoration: none;
-  font-weight: 700;
-  color: inherit; }
+  color: #CE202A; }
   :link:hover, :link:active, :link:focus, :visited:hover, :visited:active, :visited:focus {
-    text-decoration: underline;
+    text-decoration: none;
+    outline: 0; }
+
+.nio-form__row {
+  display: flex; }
+  .nio-form__row > *:not(:first-child) {
+    margin-left: 0.25rem; }
+  .nio-form__row > *:not(:last-child) {
+    margin-right: 0.25rem; }
+
+.nio-form__label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.74915rem;
+  margin-bottom: 0.25rem; }
+
+.nio-form__control, .nio-form__text-field, .nio-form__button {
+  box-sizing: border-box;
+  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
+  padding: 1rem 1rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid transparent;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem; }
+
+.nio-form__text-field {
+  width: 100%;
+  background-color: #ddd; }
+  .nio-form__text-field::placeholder {
+    font-weight: 200;
+    color: #c4c4c4; }
+  .nio-form__text-field:focus {
+    outline: 0;
+    border-color: #c4c4c4; }
+
+.nio-form__button {
+  background-color: transparent;
+  border-color: currentcolor;
+  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
+  font-weight: 600;
+  color: #CE202A;
+  padding: 1rem 1rem;
+  min-width: 20ch; }
+  .nio-form__button:focus {
     outline: 0; }
 
 .nio-button {

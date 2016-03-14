@@ -1,0 +1,38 @@
+// tables
+.nio-table {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 100%;
+
+  > thead, > tbody, > thead {
+    td, th {
+      padding: $dist-normal $dist-normal
+    }
+
+    th {
+      font-size: $font-size-small;
+      font-weight: 600;
+      text-align: left;
+    }
+  }
+
+  > thead {
+    td, th {
+      border-bottom: $dist-thin solid $color-light;
+    }
+  }
+
+  > tbody tr:nth-child(3n+1) {
+    td, th {
+      border-top: $dist-hair dotted $color-light;
+    }
+  }
+}
+
+.nio-table--striped {
+  > tbody tr:nth-child(odd) {
+    td, th {
+      background-color: $color-faint;
+    }
+  }
+}

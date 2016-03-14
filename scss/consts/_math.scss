@@ -1,0 +1,18 @@
+// The golden ratio
+$phi: (1+sqrt(5))/2;
+
+// Musical Ratios
+$union:  pow(2, 0/12);
+$min-2:  pow(2, 1/12);
+$maj-2:  pow(2, 2/12);
+$min-3:  pow(2, 3/12);
+$maj-3:  pow(2, 4/12);
+$per-4:  pow(2, 5/12);
+$aug-4:  pow(2, 6/12);
+$dim-5:  pow(2, 6/12);
+$per-5:  pow(2, 7/12);
+$min-6:  pow(2, 8/12);
+$maj-6:  pow(2, 9/12);
+$min-7:  pow(2, 10/12);
+$maj-7:  pow(2, 11/12);
+$octive: pow(2, 12/12);

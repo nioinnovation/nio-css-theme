@@ -1,0 +1,28 @@
+@mixin nio-heading-size($size: 1rem) {
+  font-size: $size;
+  line-height: ceil($size / $font-line-height) * $font-line-height;
+  letter-spacing: -$size/24;
+  margin-top: 2rem * $font-line-height;
+  margin-bottom: 3rem * $font-line-height;
+}
+
+.nio-heading {
+  @include nio-heading-size($font-size-medium);
+  font-weight: 500;
+  text-transform: lowercase;
+  text-align: center;
+}
+
+.nio-heading--primary    { @include nio-heading-size($font-size-huge); }
+.nio-heading--secondary  { @include nio-heading-size($font-size-xx-large); }
+.nio-heading--tertiary   { @include nio-heading-size($font-size-x-large); }
+.nio-heading--quaternary { @include nio-heading-size($font-size-large); }
+.nio-heading--quinary    { @include nio-heading-size($font-size-medium); }
+.nio-heading--senary     { @include nio-heading-size($font-size-small); }
+
+.nio-heading--inverted {
+  color: $color-white;
+  text-shadow: 0 $dist-hair $dist-small rgba(black, 0.75);
+}
+
+.nio-emphasis { font-style: italic; }

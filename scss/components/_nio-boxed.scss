@@ -1,0 +1,12 @@
+.nio-boxed {
+  border-radius: $dist-thin;
+  padding: $dist-normal $dist-medium;
+}
+
+.nio-boxed--shaded {
+  background-color: $color-faint;
+}
+
+.nio-boxed--bordered {
+  border: $dist-hair solid $color-light;
+}

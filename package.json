@@ -9,6 +9,7 @@
   "main": "index.js",
   "scripts": {
     "build": "node-sass --functions=index.js scss/nio.scss -o dist",
+    "watch": "node-sass --functions=index.js -w scss/nio.scss -o dist",
     "test": "mocha"
   },
   "author": "J. Holmes",

@@ -1,14 +1,18 @@
+// Reset
+@import "./reset";
+
 // Constants
-@import "./nio-const-math";
-@import "./nio-const-widths";
-@import "./nio-const-fonts";
-@import "./nio-const-colors";
+@import "./consts/math";
+@import "./consts/fonts";
+@import "./consts/widths";
+@import "./consts/colors";
 
-// Helpers/Functions
-
-// Mixins
+// Components
+@import "./components/nio-boxed";
+@import "./components/nio-headings";
+@import "./components/nio-tables";
+@import "./components/nio-forms";
 
 // Elements
-@import "./reset";
 @import "./nio-typography";
 @import "./nio-button";
