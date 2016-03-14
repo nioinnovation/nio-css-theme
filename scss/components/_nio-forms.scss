@@ -1,3 +1,8 @@
+.nio-bordered {
+  border-width: $dist-thin;
+  border-style: solid;
+  border-radius: $dist-small;
+}
 
 .nio-form {
 
@@ -20,22 +25,21 @@
   }
 
   &__control {
-    box-sizing: border-box;
-    font: $font-base;
-    padding: $dist-large $dist-large;
-    border-radius: $dist-small;
-    border: $dist-thin solid transparent;
     margin-top: $dist-small;
     margin-bottom: $dist-small;
-
   }
 
   // Text fields
   &__text-field {
-    @extend .nio-form__control;
+    @extend .nio-form__control, .nio-bordered;
+
+    box-sizing: border-box;
+    font: $font-base;
+    padding: $dist-large $dist-large;
 
     width: 100%;
     background-color: $color-light;
+    border-color: transparent;
 
     &::placeholder {
       font-weight: 200;
@@ -48,26 +52,7 @@
   }
 
   &__button {
-    @extend .nio-form__control;
-    background-color: transparent;
-    border-color: currentcolor;
-    font: $font-base;
-    font-weight: 600;
-    color: $color-red;
-    padding: $dist-large $dist-large;
-    min-width: 20ch;
-
-    transition: box-shadow 300ms, transform 66ms;
-
-    &:hover, &:focus {
-      outline: 0;
-      box-shadow: 0 0 $dist-small currentcolor;
-      transform: scale(1.01);
-    }
-
-    &:active {
-      transform: translatey($dist-thin);
-    }
+    @extend .nio-button, .nio-form__control;
   }
 
 }
