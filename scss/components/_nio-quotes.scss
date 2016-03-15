@@ -1,0 +1,48 @@
+.nio-stack-shadow {
+  box-shadow: 0 $dist-normal 0 (-6rem/16) $color-light;
+}
+
+.nio-quote {
+  quotes: "\201c" "\201d" "\2018" "\2019";
+
+  &--inline {
+    &::before { content: open-quote; }
+    &::after  { content: close-quote; }
+  }
+
+  &--blockquote {
+    @extend .nio-boxed, .nio-boxed--shaded;
+    @extend .nio-stack-shadow;
+
+    display: block;
+    box-sizing: border-box;
+    padding: $dist-large $dist-huge;
+    margin-bottom: 1rem * $font-line-height;
+    position: relative;
+    max-width: 60rem;
+
+    &::before {
+      content: '\f10d';
+      font-family: fontawesome;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $color-faint;
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.25rem;
+      line-height: 3rem;
+      text-align: center;
+      border-radius: 50%;
+      @extend .nio-bordered;
+      border-bottom-width: 0;
+      color: $color-light;
+    }
+
+    margin-top: 2rem * $font-line-height;
+    padding: 2rem * $font-line-height;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

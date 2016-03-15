@@ -1,0 +1,31 @@
+.nio-code {
+  font: $font-mono;
+  background-color: $color-faint;
+  border-radius: $dist-thin;
+  padding: $dist-small 0;
+  border-bottom: $dist-hair solid $color-light;
+  &::before, &::after {
+    font: $font-sans;
+    content: "\A0";
+  }
+
+  &--in-block {
+    padding: 0; margin: 0;
+    white-space: pre;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    &::before, &::after { content: none; }
+  }
+}
+
+.nio-code-block {
+  @extend .nio-boxed, .nio-boxed--bordered, .nio-boxed--shaded;
+  @extend .nio-stack-shadow;
+
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+  box-sizing: border-box;
+}

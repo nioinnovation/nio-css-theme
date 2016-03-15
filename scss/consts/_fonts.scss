@@ -1,18 +1,26 @@
 @import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
-$font-line-height: 1.5;
-$font-line-height-loose: (19/16);
-$font-base: normal normal 12pt/1.5 'Open Sans', Helvetica, Arial, sans serif;
+$font-line-height: 1.5 !default;
+$font-line-height-loose: (19/16) !default;
 
 // sizes
-$font-ratio: $per-4 * 1rem;
+$font-ratio: $per-4 * 1rem !default;
 
-$font-size-tiny:     pow($font-ratio, -3);
-$font-size-x-small:  pow($font-ratio, -2);
-$font-size-small:    pow($font-ratio, -1);
-$font-size-medium:   pow($font-ratio,  0);
-$font-size-large:    pow($font-ratio,  1);
-$font-size-x-large:  pow($font-ratio,  2);
-$font-size-xx-large: pow($font-ratio,  3);
-$font-size-huge:     pow($font-ratio,  4);
+$font-size-tiny:     pow($font-ratio, -3) !default;
+$font-size-x-small:  pow($font-ratio, -2) !default;
+$font-size-small:    pow($font-ratio, -1) !default;
+$font-size-medium:   pow($font-ratio,  0) !default;
+$font-size-large:    pow($font-ratio,  1) !default;
+$font-size-x-large:  pow($font-ratio,  2) !default;
+$font-size-xx-large: pow($font-ratio,  3) !default;
+$font-size-huge:     pow($font-ratio,  4) !default;
+
+$font-family-sans: 'Open Sans', Helvetica, Arial, sans serif !default;
+$font-family-mono: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+
+$font-size-root: 12pt !default;
+
+$font-sans: normal 400 #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
+$font-mono: normal 500 #{$font-size-small} / #{$font-line-height-loose} $font-family-mono !default;

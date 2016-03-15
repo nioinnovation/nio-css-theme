@@ -1,7 +1,7 @@
 @mixin nio-button-colors($color) {
   color: $color;
   background-image:
-    linear-gradient(90deg,
+    linear-gradient(65deg,
       rgba($color, 0.075) 0%,
       transparent 10%,
       transparent 90%,
@@ -13,7 +13,7 @@
   box-sizing: border-box;
   background-color: transparent;
   border-color: currentcolor;
-  font: $font-base;
+  font: $font-sans;
   font-weight: 600;
   @include nio-button-colors($color-default);
   padding: $dist-large $dist-large;
@@ -36,10 +36,10 @@
   &--info    { @include nio-button-colors($color-info); }
   &--danger  { @include nio-button-colors($color-danger); }
 
-  &--primary::before { content: '\f00c'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
-  &--warning::before { content: '\f12a'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
-  &--info::before { content: '\f129'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
-  &--danger::before { content: '\f00d'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
+//  &--primary::before { content: '\f00c'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
+//  &--warning::before { content: '\f12a'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
+//  &--info::before { content: '\f129'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
+//  &--danger::before { content: '\f00d'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
 }
 
 .nio-button-bar {
@@ -48,7 +48,7 @@
   flex-wrap: wrap;
 
   .nio-button {
-    margin: $dist-small / 2;
+    margin: $dist-x-small / 2;
   }
 
   &--grow {

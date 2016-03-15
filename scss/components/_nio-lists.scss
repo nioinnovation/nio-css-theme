@@ -1,0 +1,22 @@
+.nio-list {
+  &--numbered {
+    padding-left: 3ch;
+    list-style-type: decimal;
+  }
+  &--bulleted {
+    padding-left: 3ch;
+    list-style-type: disc;
+  }
+}
+
+
+.nio-definition {
+  margin-left: -2ch;
+  text-indent: 2ch;
+  &__def, &__term { display: inline; }
+  &__term {
+    font-weight: 600;
+    letter-spacing: -0.04rem;
+    &::after { content: "\a0\00B7"; }
+  }
+}
