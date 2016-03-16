@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -47,150 +48,135 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.nio-boxed {
+.nio-boxed, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
   border-radius: 0.125rem;
-  padding: 0.5rem 0.75rem; }
+  padding: 0.75rem 1rem; }
 
-.nio-boxed--shaded {
-  background-color: #f8f8f8; }
+.nio-boxed--shaded, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
+  background-color: #f8f7f7; }
 
-.nio-boxed--bordered {
-  border: 0.0625rem solid #ddd; }
+.nio-boxed--bordered, .nio-code-block, .nio-html pre {
+  border: 0.0625rem solid #dfdede; }
 
-.nio-heading, h1, h2, h3, h4, h5, h6 {
+.nio-heading, .nio-html h1, .nio-html h2, .nio-html h3, .nio-html h4, .nio-html h5, .nio-html h6 {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.04167rem;
   margin-top: 3rem;
-  margin-bottom: 4.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 500;
-  text-transform: lowercase;
-  text-align: center; }
+  text-transform: lowercase; }
 
-.nio-heading--primary, h1 {
+.nio-heading--primary, .nio-html h1 {
   font-size: 3.1748rem;
   line-height: 4.5rem;
   letter-spacing: -0.13228rem;
-  margin-top: 3rem;
+  margin-top: 9rem;
   margin-bottom: 4.5rem; }
 
-.nio-heading--secondary, h2 {
+.nio-heading--secondary, .nio-html h2 {
   font-size: 2.37841rem;
   line-height: 3rem;
   letter-spacing: -0.0991rem;
-  margin-top: 3rem;
-  margin-bottom: 4.5rem; }
+  margin-top: 6rem;
+  margin-bottom: 3rem; }
 
-.nio-heading--tertiary, h3 {
+.nio-heading--tertiary, .nio-html h3 {
   font-size: 1.7818rem;
   line-height: 3rem;
   letter-spacing: -0.07424rem;
-  margin-top: 3rem;
-  margin-bottom: 4.5rem; }
+  margin-top: 6rem;
+  margin-bottom: 3rem; }
 
-.nio-heading--quaternary, h4 {
+.nio-heading--quaternary, .nio-html h4 {
   font-size: 1.33484rem;
   line-height: 1.5rem;
   letter-spacing: -0.05562rem;
   margin-top: 3rem;
-  margin-bottom: 4.5rem; }
+  margin-bottom: 1.5rem; }
 
-.nio-heading--quinary, h5 {
+.nio-heading--quinary, .nio-html h5 {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.04167rem;
   margin-top: 3rem;
-  margin-bottom: 4.5rem; }
+  margin-bottom: 1.5rem; }
 
-.nio-heading--senary, h6 {
+.nio-heading--senary, .nio-html h6 {
   font-size: 0.74915rem;
   line-height: 1.5rem;
   letter-spacing: -0.03121rem;
   margin-top: 3rem;
-  margin-bottom: 4.5rem; }
+  margin-bottom: 1.5rem; }
+
+.nio-heading--centered {
+  text-align: center; }
 
 .nio-heading--inverted {
-  color: #fff;
-  text-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.75); }
+  color: #fffefe;
+  text-shadow: 0 0.0625rem 0.375rem rgba(0, 0, 0, 0.75), -0.0625rem 0.125rem rgba(0, 0, 0, 0.5); }
 
-.nio-emphasis, em {
-  font-style: italic; }
-
-.nio-table, table {
+.nio-table, .nio-html table {
   margin-left: auto;
   margin-right: auto;
   min-width: 100%; }
-  .nio-table > thead td, table > thead td, .nio-table > thead th, table > thead th, .nio-table > tbody td, table > tbody td, .nio-table > tbody th, table > tbody th, .nio-table > thead td, table > thead td, .nio-table > thead th, table > thead th {
+  .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th, .nio-table > tbody td, .nio-html table > tbody td, .nio-table > tbody th, .nio-html table > tbody th, .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th {
     padding: 0.5rem 0.5rem; }
-  .nio-table > thead th, table > thead th, .nio-table > tbody th, table > tbody th, .nio-table > thead th, table > thead th {
+  .nio-table > thead th, .nio-html table > thead th, .nio-table > tbody th, .nio-html table > tbody th, .nio-table > thead th, .nio-html table > thead th {
     font-size: 0.74915rem;
     font-weight: 600;
     text-align: left; }
-  .nio-table > thead td, table > thead td, .nio-table > thead th, table > thead th {
-    border-bottom: 0.125rem solid #ddd; }
-  .nio-table > tbody tr:nth-child(3n+1) td, table > tbody tr:nth-child(3n+1) td, .nio-table > tbody tr:nth-child(3n+1) th, table > tbody tr:nth-child(3n+1) th {
-    border-top: 0.0625rem dotted #ddd; }
+  .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th {
+    border-bottom: 0.125rem solid #dfdede; }
+  .nio-table > tbody tr:nth-child(3n+1) td, .nio-html table > tbody tr:nth-child(3n+1) td, .nio-table > tbody tr:nth-child(3n+1) th, .nio-html table > tbody tr:nth-child(3n+1) th {
+    border-top: 0.0625rem dotted #dfdede; }
 
 .nio-table--striped > tbody tr:nth-child(odd) td, .nio-table--striped > tbody tr:nth-child(odd) th {
-  background-color: #f8f8f8; }
+  background-color: #f8f7f7; }
 
-.nio-form__row {
-  display: flex; }
-  .nio-form__row > *:not(:first-child) {
-    margin-left: 0.25rem; }
-  .nio-form__row > *:not(:last-child) {
-    margin-right: 0.25rem; }
-
-.nio-form__label {
-  display: block;
-  font-weight: 600;
-  font-size: 0.74915rem;
-  margin-bottom: 0.25rem; }
-
-.nio-form__control, .nio-form__text-field, .nio-form__button {
+.nio-button, .nio-form__button {
   box-sizing: border-box;
-  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
-  padding: 1rem 1rem;
-  border-radius: 0.25rem;
-  border: 0.125rem solid transparent;
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem; }
-
-.nio-form__text-field {
-  width: 100%;
-  background-color: #ddd; }
-  .nio-form__text-field::placeholder {
-    font-weight: 200;
-    color: #c4c4c4; }
-  .nio-form__text-field:focus {
-    outline: 0;
-    border-color: #c4c4c4; }
-
-.nio-form__button {
   background-color: transparent;
   border-color: currentcolor;
-  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
+  font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
   font-weight: 600;
-  color: #CE202A;
+  color: #746767;
+  background-image: linear-gradient(65deg, rgba(116, 103, 103, 0.075) 0%, transparent 10%, transparent 90%, rgba(116, 103, 103, 0.075) 100%);
   padding: 1rem 1rem;
   min-width: 20ch;
   transition: box-shadow 300ms, transform 66ms; }
-  .nio-form__button:hover, .nio-form__button:focus {
+  .nio-button:hover, .nio-form__button:hover, .nio-button:focus, .nio-form__button:focus {
     outline: 0;
-    box-shadow: 0 0 0.25rem currentcolor;
+    box-shadow: 0 0 0.5rem currentcolor;
     transform: scale(1.01); }
-  .nio-form__button:active {
-    transform: translatey(0.125rem); }
+  .nio-button:active, .nio-form__button:active {
+    transform: translatey(0.0625rem); }
+  .nio-button--primary {
+    color: #286bb6;
+    background-image: linear-gradient(65deg, rgba(40, 107, 182, 0.075) 0%, transparent 10%, transparent 90%, rgba(40, 107, 182, 0.075) 100%); }
+  .nio-button--warning {
+    color: #f0ad4e;
+    background-image: linear-gradient(65deg, rgba(240, 173, 78, 0.075) 0%, transparent 10%, transparent 90%, rgba(240, 173, 78, 0.075) 100%); }
+  .nio-button--info {
+    color: #16a085;
+    background-image: linear-gradient(65deg, rgba(22, 160, 133, 0.075) 0%, transparent 10%, transparent 90%, rgba(22, 160, 133, 0.075) 100%); }
+  .nio-button--danger {
+    color: #CE202A;
+    background-image: linear-gradient(65deg, rgba(206, 32, 42, 0.075) 0%, transparent 10%, transparent 90%, rgba(206, 32, 42, 0.075) 100%); }
 
-:root {
-  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif; }
+.nio-button-bar {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; }
+  .nio-button-bar .nio-button, .nio-button-bar .nio-form__button {
+    margin: 0.125rem; }
+  .nio-button-bar--grow .nio-button, .nio-button-bar--grow .nio-form__button {
+    flex-grow: 1; }
 
-:link, :visited {
-  text-decoration: none;
-  color: #CE202A; }
-  :link:hover, :link:active, :link:focus, :visited:hover, :visited:active, :visited:focus {
-    text-decoration: none;
-    outline: 0; }
+.nio-bordered, .nio-button, .nio-form__button, .nio-form__text-field, .nio-quote--blockquote::before, .nio-html blockquote::before {
+  border-width: 0.125rem;
+  border-style: solid;
+  border-radius: 0.25rem; }
 
 .nio-form__row {
   display: flex; }
@@ -206,56 +192,132 @@ table {
   margin-bottom: 0.25rem; }
 
 .nio-form__control, .nio-form__text-field, .nio-form__button {
-  box-sizing: border-box;
-  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
-  padding: 1rem 1rem;
-  border-radius: 0.25rem;
-  border: 0.125rem solid transparent;
   margin-top: 0.25rem;
   margin-bottom: 0.25rem; }
 
 .nio-form__text-field {
+  box-sizing: border-box;
+  font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
+  padding: 1rem 1rem;
   width: 100%;
-  background-color: #ddd; }
+  background-color: #dfdede;
+  border-color: transparent; }
   .nio-form__text-field::placeholder {
     font-weight: 200;
-    color: #c4c4c4; }
+    color: #c6c4c4; }
   .nio-form__text-field:focus {
     outline: 0;
-    border-color: #c4c4c4; }
+    border-color: #c6c4c4; }
 
-.nio-form__button {
-  background-color: transparent;
-  border-color: currentcolor;
-  font: normal normal 12pt/1.5 "Open Sans", Helvetica, Arial, sans serif;
-  font-weight: 600;
-  color: #CE202A;
-  padding: 1rem 1rem;
-  min-width: 20ch; }
-  .nio-form__button:focus {
+.nio-list--numbered, .nio-html ol {
+  padding-left: 3ch;
+  list-style-type: decimal; }
+
+.nio-list--bulleted, .nio-html ul {
+  padding-left: 3ch;
+  list-style-type: disc; }
+
+.nio-list__item, .nio-html ul > li, .nio-html ol > li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; }
+
+.nio-definition, .nio-html dl {
+  margin-left: -2ch;
+  text-indent: 2ch; }
+  .nio-definition__def, .nio-html dl > dd, .nio-definition__term, .nio-html dl > dt {
+    display: inline; }
+  .nio-definition__term, .nio-html dl > dt {
+    font-weight: 600;
+    letter-spacing: -0.04rem; }
+    .nio-definition__term::after, .nio-html dl > dt::after {
+      content: "\a0\00B7"; }
+
+.nio-stack-shadow, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
+  box-shadow: 0 0.5rem 0 -0.375rem #dfdede; }
+
+.nio-quote, .nio-html q, .nio-html blockquote {
+  quotes: "\201c" "\201d" "\2018" "\2019"; }
+  .nio-quote--inline::before, .nio-html q::before {
+    content: open-quote; }
+  .nio-quote--inline::after, .nio-html q::after {
+    content: close-quote; }
+  .nio-quote--blockquote, .nio-html blockquote {
+    display: block;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    max-width: 60rem;
+    margin-top: 3rem;
+    padding: 3rem;
+    margin-left: auto;
+    margin-right: auto; }
+    .nio-quote--blockquote::before, .nio-html blockquote::before {
+      content: '\f10d';
+      font-family: fontawesome;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #f8f7f7;
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.25rem;
+      line-height: 3rem;
+      text-align: center;
+      border-radius: 50%;
+      border-bottom-width: 0;
+      color: #dfdede; }
+
+.nio-code, .nio-html code {
+  font: normal 500 0.74915rem / 1.1875 "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  background-color: #f8f7f7;
+  border-radius: 0.125rem;
+  padding: 0.375rem 0;
+  border-bottom: 0.0625rem solid #dfdede; }
+  .nio-code::before, .nio-html code::before, .nio-code::after, .nio-html code::after {
+    font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
+    content: "\A0"; }
+  .nio-code--in-block, .nio-html pre code {
+    padding: 0;
+    margin: 0;
+    white-space: pre;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0; }
+    .nio-code--in-block::before, .nio-html pre code::before, .nio-code--in-block::after, .nio-html pre code::after {
+      content: none; }
+
+.nio-code-block, .nio-html pre {
+  overflow: auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60rem;
+  box-sizing: border-box; }
+
+.nio-sans {
+  font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif; }
+
+.nio-mono {
+  font: normal 500 0.74915rem / 1.1875 "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+
+.nio-emphasis, .nio-html em {
+  font-style: italic; }
+
+.nio-link, .nio-html :link, .nio-html :visited {
+  text-decoration: none;
+  color: #CE202A; }
+  .nio-link:hover, .nio-html :hover:link, .nio-html :hover:visited, .nio-link:active, .nio-html :active:link, .nio-html :active:visited, .nio-link:focus, .nio-html :focus:link, .nio-html :focus:visited {
+    text-decoration: none;
     outline: 0; }
 
-.nio-button {
-  border: 0.0625rem solid #ddd;
-  margin: 0 1rem;
-  border-radius: 0.25rem;
-  background-color: white;
-  color: #ddd;
-  font-family: 'Open Sans', Helvetica, arial, sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.25rem 1rem;
-  position: relative;
-  transition: border-color 333ms, background-color 333ms, box-shadow 333ms, color 333ms; }
-  .nio-button:hover, .nio-button:focus {
-    border-color: #ad1b23;
-    color: white;
-    background-color: #CE202A;
-    outline: 0;
-    box-shadow: 0 0 1rem #ce202a; }
-  .nio-button:active {
-    outline: 0;
-    border-color: #CE202A;
-    background-color: #e14049;
-    box-shadow: none;
-    top: 0.0625rem; }
+.nio-sscript, .nio-html sup, .nio-html sub {
+  font-size: 58.3%; }
+  .nio-sscript--super, .nio-html sup {
+    vertical-align: super; }
+  .nio-sscript--sub, .nio-html sub {
+    vertical-align: sub; }
+
+.nio-html p, .nio-html pre {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
