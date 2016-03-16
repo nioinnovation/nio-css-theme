@@ -17,8 +17,55 @@
 @import "./components/nio-lists";
 @import "./components/nio-quotes";
 @import "./components/nio-code";
-
+@import "./components/nio-typography";
 
 // Elements
-@import "./nio-typography";
+.nio-html {
+  // headings
+  h1 { @extend .nio-heading, .nio-heading--primary; }
+  h2 { @extend .nio-heading, .nio-heading--secondary; }
+  h3 { @extend .nio-heading, .nio-heading--tertiary; }
+  h4 { @extend .nio-heading, .nio-heading--quaternary; }
+  h5 { @extend .nio-heading, .nio-heading--quinary; }
+  h6 { @extend .nio-heading, .nio-heading--senary; }
+  em { @extend .nio-emphasis; }
 
+  // Links
+  :link, :visited { @extend .nio-link; }
+
+  // tables
+  table { @extend .nio-table; }
+
+  // quotes
+  q { @extend .nio-quote, .nio-quote--inline; }
+  blockquote { @extend .nio-quote, .nio-quote--blockquote; }
+
+  // subscripts / superscripts
+  sup { @extend .nio-sscript, .nio-sscript--super; }
+  sub { @extend .nio-sscript, .nio-sscript--sub; }
+
+  // code
+  code { @extend .nio-code; }
+  pre  { @extend .nio-code-block; }
+  pre code { @extend .nio-code--in-block; }
+
+  // lists
+  ul, ol {
+    @extend .nio-list;
+    > li { @extend .nio-list__item; }
+  }
+  ul { @extend .nio-list--bulleted; }
+  ol { @extend .nio-list--numbered; }
+
+  dl {
+    @extend .nio-definition;
+    > dt { @extend .nio-definition__term; }
+    > dd { @extend .nio-definition__def; }
+  }
+
+
+  p, pre {
+    margin-top: 1rem * $font-line-height;
+    margin-bottom: 1rem * $font-line-height;
+  }
+}

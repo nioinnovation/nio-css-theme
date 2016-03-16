@@ -7,6 +7,11 @@
     padding-left: 3ch;
     list-style-type: disc;
   }
+
+  &__item {
+    margin-top: $dist-normal;
+    margin-bottom: $dist-normal;
+  }
 }
 
 

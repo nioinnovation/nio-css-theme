@@ -1,0 +1,20 @@
+.nio-sans { font: $font-sans; }
+.nio-mono { font: $font-mono; }
+
+.nio-emphasis { font-style: italic; }
+.nio-link {
+  text-decoration: none;
+  color: $color-link;
+  &:hover, &:active, &:focus {
+    text-decoration: none;
+    outline: 0;
+  }
+}
+
+.nio-sscript {
+  font-size: 58.3%;
+  &--super { vertical-align: super; }
+  &--sub   { vertical-align: sub; }
+}
+
+// Applications
