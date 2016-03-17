@@ -32,14 +32,22 @@
   }
 
   &--primary { @include nio-button-colors($color-primary); }
+  &--alt     { @include nio-button-colors($color-danger); }
   &--warning { @include nio-button-colors($color-warning); }
   &--info    { @include nio-button-colors($color-info); }
   &--danger  { @include nio-button-colors($color-danger); }
 
-//  &--primary::before { content: '\f00c'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
-//  &--warning::before { content: '\f12a'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
-//  &--info::before { content: '\f129'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
-//  &--danger::before { content: '\f00d'; font-family: fontawesome; margin-right: 1ch; vertical-align: middle; }
+  &--with-icon::before {
+    font-family: fontawesome;
+    margin-right: 1ch;
+    vertical-align: middle;
+    line-height: 0;
+  }
+  &--with-icon#{&}--primary::before { content: '\f00c'; }
+  &--with-icon#{&}--alt::before     { content: '\f00c'; }
+  &--with-icon#{&}--warning::before { content: '\f12a'; }
+  &--with-icon#{&}--info::before    { content: '\f129'; }
+  &--with-icon#{&}--danger::before  { content: '\f00d'; }
 }
 
 .nio-button-bar {
