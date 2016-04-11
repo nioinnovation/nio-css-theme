@@ -1,17 +1,21 @@
+$nio-heading--margin-top-mul: 2 !default;
+$nio-heading--margin-bottom-mul: 1 !default;
+$nio-heading--letter-spacing-mul: -1/24 !default;
+
 @mixin nio-heading-size($size: 1rem) {
   font-size: $size;
   $lh: ceil($size / $font-line-height) * $font-line-height;
   line-height: $lh;
-  letter-spacing: -$size/24;
+  letter-spacing: $size * $nio-heading--letter-spacing-mul;
   margin: {
-    top: 2 * $lh;
-    bottom: 1 * $lh;
+    top: $nio-heading--margin-top-mul * $lh;
+    bottom: $nio-heading--margin-bottom-mul * $lh;
   }
 }
 
 .nio-heading {
   @include nio-heading-size($font-size-medium);
-  font-weight: 500;
+  font: $font-heading;
   text-transform: lowercase;
   &:link, &:visited {
     color: inherit;
