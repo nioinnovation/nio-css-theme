@@ -1,5 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
-@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:500);
+$font-import-default: true !default;
+
+@if $font-import-default == 'true' {
+  @import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
+  @import url(//fonts.googleapis.com/css?family=Source+Code+Pro:500);
+}
+
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 
 $font-line-height: 1.5 !default;
@@ -25,7 +30,10 @@ $font-family-sans: 'Open Sans', Helvetica, Arial, sans serif !default;
 $font-family-heading: $font-family-sans !default;
 $font-family-mono: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
 
+$font-weight-sans: 400 !default;
+$font-weight-heading: 600 !default;
+$font-weight-mono: 500 !default;
 
-$font-sans: normal 400 #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
-$font-heading: normal 600 #{$font-size-root} / #{$font-line-height} $font-family-heading !default;
-$font-mono: normal 500 #{$font-size-small} / #{$font-line-height-loose} $font-family-mono !default;
+$font-sans: normal $font-weight-sans #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
+$font-heading: normal $font-weight-heading #{$font-size-root} / #{$font-line-height} $font-family-heading !default;
+$font-mono: normal $font-weight-mono #{$font-size-small} / #{$font-line-height-loose} $font-family-mono !default;
