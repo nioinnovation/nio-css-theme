@@ -15,7 +15,7 @@
   "author": "J. Holmes",
   "license": "MIT",
   "dependencies": {
-    "node-sass": "^3.4.2"
+    "node-sass": "^3.7.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
