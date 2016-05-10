@@ -1,10 +1,12 @@
 // widths
-$dist-hair:    1rem * (1/16)  !default;
-$dist-thin:    1rem * (2/16)  !default;
-$dist-x-small: 1rem * (4/16)  !default;
-$dist-small:   1rem * (6/16)  !default;
-$dist-normal:  1rem * (8/16)  !default;
-$dist-medium:  1rem * (12/16) !default;
+$dist-base: $font-size-root / ($font-size-root * 0 + 1) !default;
+
+$dist-hair:    1rem * (1/$dist-base)  !default;
+$dist-thin:    1rem * (2/$dist-base)  !default;
+$dist-x-small: 1rem * (4/$dist-base)  !default;
+$dist-small:   1rem * (6/$dist-base)  !default;
+$dist-normal:  1rem * (8/$dist-base)  !default;
+$dist-medium:  1rem * (12/$dist-base) !default;
 $dist-large:   1rem           !default;
 $dist-huge:    2rem           !default;
 
