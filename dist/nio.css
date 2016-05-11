@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 @import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
-@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:500);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:500);
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,14 +49,14 @@ table {
   border-spacing: 0; }
 
 .nio-boxed, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
-  border-radius: 0.125rem;
-  padding: 0.75rem 1rem; }
+  border-radius: 0.16667rem;
+  padding: 1rem 1rem; }
 
 .nio-boxed--shaded, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
   background-color: #f8f7f7; }
 
 .nio-boxed--bordered, .nio-code-block, .nio-html pre {
-  border: 0.0625rem solid #dfdede; }
+  border: 0.08333rem solid #dfdede; }
 
 .nio-heading, .nio-html h1, .nio-html h2, .nio-html h3, .nio-html h4, .nio-html h5, .nio-html h6 {
   font-size: 1rem;
@@ -64,7 +64,7 @@ table {
   letter-spacing: -0.04167rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-  font-weight: 500;
+  font: normal 600 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
   text-transform: lowercase; }
   .nio-heading:link, .nio-html h1:link, .nio-html h2:link, .nio-html h3:link, .nio-html h4:link, .nio-html h5:link, .nio-html h6:link, .nio-heading:visited, .nio-html h1:visited, .nio-html h2:visited, .nio-html h3:visited, .nio-html h4:visited, .nio-html h5:visited, .nio-html h6:visited {
     color: inherit;
@@ -117,7 +117,7 @@ table {
 
 .nio-heading--inverted {
   color: #fffefe;
-  text-shadow: 0 0.0625rem 0.375rem rgba(0, 0, 0, 0.75), -0.0625rem 0.125rem rgba(0, 0, 0, 0.5); }
+  text-shadow: 0 0.08333rem 0.5rem rgba(0, 0, 0, 0.75), -0.08333rem 0.16667rem rgba(0, 0, 0, 0.5); }
   .nio-heading--inverted:link, .nio-heading--inverted:visited {
     color: #fffefe; }
 
@@ -126,15 +126,15 @@ table {
   margin-right: auto;
   min-width: 100%; }
   .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th, .nio-table > tbody td, .nio-html table > tbody td, .nio-table > tbody th, .nio-html table > tbody th, .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th {
-    padding: 0.5rem 0.5rem; }
+    padding: 0.66667rem 0.66667rem; }
   .nio-table > thead th, .nio-html table > thead th, .nio-table > tbody th, .nio-html table > tbody th, .nio-table > thead th, .nio-html table > thead th {
     font-size: 0.74915rem;
     font-weight: 600;
     text-align: left; }
   .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th {
-    border-bottom: 0.125rem solid #dfdede; }
+    border-bottom: 0.16667rem solid #dfdede; }
   .nio-table > tbody tr:nth-child(3n+1) td, .nio-html table > tbody tr:nth-child(3n+1) td, .nio-table > tbody tr:nth-child(3n+1) th, .nio-html table > tbody tr:nth-child(3n+1) th {
-    border-top: 0.0625rem dotted #dfdede; }
+    border-top: 0.08333rem dotted #dfdede; }
 
 .nio-table--striped > tbody tr:nth-child(odd) td, .nio-table--striped > tbody tr:nth-child(odd) th {
   background-color: #f8f7f7; }
@@ -152,10 +152,10 @@ table {
   transition: box-shadow 300ms, transform 66ms; }
   .nio-button:hover, .nio-form__button:hover, .nio-button:focus, .nio-form__button:focus {
     outline: 0;
-    box-shadow: 0 0 0.5rem currentcolor;
+    box-shadow: 0 0 0.66667rem currentcolor;
     transform: scale(1.01); }
   .nio-button:active, .nio-form__button:active {
-    transform: translatey(0.0625rem); }
+    transform: translatey(0.08333rem); }
   .nio-button--primary {
     color: #286bb6;
     background-image: linear-gradient(65deg, rgba(40, 107, 182, 0.075) 0%, transparent 10%, transparent 90%, rgba(40, 107, 182, 0.075) 100%); }
@@ -192,31 +192,31 @@ table {
   justify-content: flex-end;
   flex-wrap: wrap; }
   .nio-button-bar .nio-button, .nio-button-bar .nio-form__button {
-    margin: 0.125rem; }
+    margin: 0.16667rem; }
   .nio-button-bar--grow .nio-button, .nio-button-bar--grow .nio-form__button {
     flex-grow: 1; }
 
 .nio-bordered, .nio-button, .nio-form__button, .nio-form__text-field, .nio-quote--blockquote::before, .nio-html blockquote::before {
-  border-width: 0.125rem;
+  border-width: 0.16667rem;
   border-style: solid;
-  border-radius: 0.25rem; }
+  border-radius: 0.33333rem; }
 
 .nio-form__row {
   display: flex; }
   .nio-form__row > *:not(:first-child) {
-    margin-left: 0.25rem; }
+    margin-left: 0.33333rem; }
   .nio-form__row > *:not(:last-child) {
-    margin-right: 0.25rem; }
+    margin-right: 0.33333rem; }
 
 .nio-form__label {
   display: block;
   font-weight: 600;
   font-size: 0.74915rem;
-  margin-bottom: 0.25rem; }
+  margin-bottom: 0.33333rem; }
 
 .nio-form__control, .nio-form__text-field, .nio-form__button {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem; }
+  margin-top: 0.33333rem;
+  margin-bottom: 0.33333rem; }
 
 .nio-form__text-field {
   box-sizing: border-box;
@@ -232,17 +232,17 @@ table {
     outline: 0;
     border-color: #c6c4c4; }
 
-.nio-list--numbered, .nio-html ol {
-  padding-left: 3ch;
-  list-style-type: decimal; }
-
-.nio-list--bulleted, .nio-html ul {
-  padding-left: 3ch;
-  list-style-type: disc; }
-
-.nio-list__item, .nio-html ul > li, .nio-html ol > li {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem; }
+.nio-list, .nio-html ul, .nio-html ol {
+  display: block; }
+  .nio-list--numbered, .nio-html ol {
+    padding-left: 3ch;
+    list-style-type: decimal; }
+  .nio-list--bulleted, .nio-html ul {
+    padding-left: 3ch;
+    list-style-type: disc; }
+  .nio-list__item, .nio-html ul > li, .nio-html ol > li {
+    margin-top: 0.66667rem;
+    margin-bottom: 0.66667rem; }
 
 .nio-definition, .nio-html dl {
   margin-left: -2ch;
@@ -256,7 +256,7 @@ table {
       content: "\a0\00B7"; }
 
 .nio-stack-shadow, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
-  box-shadow: 0 0.5rem 0 -0.375rem #dfdede; }
+  box-shadow: 0 0.66667rem 0 -0.375rem #dfdede; }
 
 .nio-quote, .nio-html q, .nio-html blockquote {
   quotes: "\201c" "\201d" "\2018" "\2019"; }
@@ -295,9 +295,9 @@ table {
 .nio-code, .nio-html code {
   font: normal 500 0.74915rem / 1.1875 "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
   background-color: #f8f7f7;
-  border-radius: 0.125rem;
-  padding: 0.375rem 0;
-  border-bottom: 0.0625rem solid #dfdede; }
+  border-radius: 0.16667rem;
+  padding: 0.5rem 0;
+  border-bottom: 0.08333rem solid #dfdede; }
   .nio-code::before, .nio-html code::before, .nio-code::after, .nio-html code::after {
     font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
     content: "\A0"; }
