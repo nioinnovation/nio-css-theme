@@ -3,6 +3,7 @@ $dist-base: $font-size-root / ($font-size-root * 0 + 1) !default;
 
 $dist-hair:    1rem * (1/$dist-base)  !default;
 $dist-thin:    1rem * (2/$dist-base)  !default;
+$dist-tiny:    1rem * (3/$dist-base)  !default;
 $dist-x-small: 1rem * (4/$dist-base)  !default;
 $dist-small:   1rem * (6/$dist-base)  !default;
 $dist-normal:  1rem * (8/$dist-base)  !default;
