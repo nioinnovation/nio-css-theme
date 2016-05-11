@@ -1,4 +1,4 @@
-$font-import-default: true !default;
+$font-import-default: 'true' !default;
 
 @if $font-import-default == 'true' {
   @import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
