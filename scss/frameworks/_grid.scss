@@ -1,0 +1,32 @@
+$nio-grid-columns: 12 !default;
+
+@mixin nio-grid__column-abs($width) {
+  max-width: $width;
+  flex-basis: $width;
+  flex-grow: 0;
+}
+
+@mixin nio-grid__column($i, $total: $nio-grid-columns) {
+  @include nio-grid__column-abs($i / $total * 100%);
+}
+
+.nio-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__column {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+    min-width: 1 / $nio-grid-columns * 100%;
+
+    @for $i from 1 through $nio-grid-columns {
+      &--#{$i} { @include nio-grid__column($i); }
+      &--#{$i}-before { margin-left: $i / $nio-grid-columns * 100%; }
+      &--#{$i}-after  { margin-right: $i / $nio-grid-columns * 100%; }
+    }
+  }
+}
