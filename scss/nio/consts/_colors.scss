@@ -4,14 +4,12 @@ $color-light: #dfdede !default;
 $color-faint: #f8f7f7 !default;
 $color-white: #fffefe !default;
 
-$color-red: #CE202A !default;
-$color-yellow: #FEDD31 !default;
-$color-nio: #CE202A;
+$color-nio:    #CE202A;
 
 $color-default:   #746767 !default;
 $color-primary:   #286bb6 !default;
 $color-warning:   #f0ad4e !default;
 $color-info:      #16a085 !default;
-$color-danger:    #CE202A !default;
+$color-danger:    $color-nio !default;
 
 $color-link: $color-nio;

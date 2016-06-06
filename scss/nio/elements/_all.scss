@@ -1,29 +1,6 @@
-// Reset
-@import "./reset";
-
-// Constants
-@import "./consts/math";
-@import "./consts/fonts";
-@import "./consts/widths";
-@import "./consts/colors";
-@import "./consts/sizes";
-
-// frameworks
-@import "./frameworks/grid";
-
-// Components
-@import "./components/nio-boxed";
-@import "./components/nio-headings";
-@import "./components/nio-tables";
-@import "./components/nio-button";
-@import "./components/nio-forms";
-@import "./components/nio-lists";
-@import "./components/nio-quotes";
-@import "./components/nio-code";
-@import "./components/nio-typography";
 
 // Elements
-.nio-html {
+%nio-html {
   // headings
   h1 { @extend .nio-heading, .nio-heading--primary; }
   h2 { @extend .nio-heading, .nio-heading--secondary; }
@@ -65,7 +42,6 @@
     > dt { @extend .nio-definition__term; }
     > dd { @extend .nio-definition__def; }
   }
-
 
   p, pre {
     margin-top: 1rem * $font-line-height;

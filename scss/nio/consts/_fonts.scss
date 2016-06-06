@@ -1,12 +1,3 @@
-$font-import-default: 'true' !default;
-
-@if $font-import-default == 'true' {
-  @import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
-  @import url(//fonts.googleapis.com/css?family=Source+Code+Pro:500);
-}
-
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-
 $font-line-height: 1.5 !default;
 $font-line-height-loose: (19/16) !default;
 
@@ -25,11 +16,11 @@ $font-size-xx-large: pow($font-ratio,  3) !default;
 $font-size-huge:     pow($font-ratio,  4) !default;
 
 // font families
-
-$font-family-sans: 'Open Sans', Helvetica, Arial, sans serif !default;
+$font-family-sans: sans-serif !default;
 $font-family-heading: $font-family-sans !default;
-$font-family-mono: 'Source Code Pro', Consolas, "Liberation Mono", Menlo, Courier, monospace !default;
+$font-family-mono: monospace !default;
 
+// Font weights
 $font-weight-sans: 400 !default;
 $font-weight-heading: 600 !default;
 $font-weight-mono: 500 !default;

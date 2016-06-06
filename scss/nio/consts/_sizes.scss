@@ -1,0 +1,12 @@
+$size-tablet: 768px !default;
+$size-desktop: 1030px !default;
+
+@mixin phone-only-breakpoint { @content; }
+
+@mixin tablet-only-breakpoint {
+  @media screen and (min-width: $size-tablet) { @content; }
+}
+
+@mixin desktop-only-breakpoint {
+  @media screen and (min-width: $size-desktop) { @content; }
+}
