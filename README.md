@@ -1,8 +1,37 @@
 # n.io SCSS
 
-The SCSS/CSS Framework for developing n.io frontend applications. Include a collection of sass helper functions for use with [node-sass](https://github.com/sass/node-sass)
+The SCSS/CSS Framework for developing n.io frontend applications. Also included are a collection of sass helper functions for use with [node-sass](https://github.com/sass/node-sass).
 
 ## n.io SCSS Common
+
+Install using bash.
+
+```bash
+npm install --save nioinnovation/nio-scss
+```
+
+Then add the following options to node-sass:
+
+```js
+var nodeSassOptions =  {
+  includePaths: ['node_modules/nio-scss/scss'],
+  functions: require('nio-scss')
+};
+```
+
+Or from brunch, using sass-brunch, add the following to your `brunch-config.js`:
+
+```js
+module.exports = {
+ plugins: {
+    sass: {
+      mode: 'native',
+      options: { includePaths: ['node_modules/nio-scss/scss'] },
+      functions: require('nio-scss')
+    }
+  }
+}
+```
 
 ## Math Helpers
 
