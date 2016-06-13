@@ -1,10 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
-@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:500);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:200,400,500,600);
+@import url(//fonts.googleapis.com/css?family=Source+Code+Pro:500);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -156,64 +156,64 @@ table {
     .nio-grid__column--12-after {
       margin-right: 100%; }
 
-.nio-boxed, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
+.nio-boxed, .nio-quote--blockquote, .nio-code-block {
   border-radius: 0.16667rem;
-  padding: 1rem 1rem; }
+  padding: 1rem; }
 
-.nio-boxed--shaded, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
+.nio-boxed--shaded, .nio-quote--blockquote, .nio-code-block {
   background-color: #f8f7f7; }
 
-.nio-boxed--bordered, .nio-code-block, .nio-html pre {
+.nio-boxed--bordered, .nio-code-block {
   border: 0.08333rem solid #dfdede; }
 
-.nio-heading, .nio-html h1, .nio-html h2, .nio-html h3, .nio-html h4, .nio-html h5, .nio-html h6 {
+.nio-heading {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.04167rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-  font: normal 600 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
+  font: normal 600 12pt / 1.5 sans-serif;
   text-transform: lowercase; }
-  .nio-heading:link, .nio-html h1:link, .nio-html h2:link, .nio-html h3:link, .nio-html h4:link, .nio-html h5:link, .nio-html h6:link, .nio-heading:visited, .nio-html h1:visited, .nio-html h2:visited, .nio-html h3:visited, .nio-html h4:visited, .nio-html h5:visited, .nio-html h6:visited {
+  .nio-heading:link, .nio-heading:visited {
     color: inherit;
     text-decoration: none; }
 
-.nio-heading--primary, .nio-html h1 {
+.nio-heading--primary {
   font-size: 3.1748rem;
   line-height: 4.5rem;
   letter-spacing: -0.13228rem;
   margin-top: 9rem;
   margin-bottom: 4.5rem; }
 
-.nio-heading--secondary, .nio-html h2 {
+.nio-heading--secondary {
   font-size: 2.37841rem;
   line-height: 3rem;
   letter-spacing: -0.0991rem;
   margin-top: 6rem;
   margin-bottom: 3rem; }
 
-.nio-heading--tertiary, .nio-html h3 {
+.nio-heading--tertiary {
   font-size: 1.7818rem;
   line-height: 3rem;
   letter-spacing: -0.07424rem;
   margin-top: 6rem;
   margin-bottom: 3rem; }
 
-.nio-heading--quaternary, .nio-html h4 {
+.nio-heading--quaternary {
   font-size: 1.33484rem;
   line-height: 1.5rem;
   letter-spacing: -0.05562rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
 
-.nio-heading--quinary, .nio-html h5 {
+.nio-heading--quinary {
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: -0.04167rem;
   margin-top: 3rem;
   margin-bottom: 1.5rem; }
 
-.nio-heading--senary, .nio-html h6 {
+.nio-heading--senary {
   font-size: 0.74915rem;
   line-height: 1.5rem;
   letter-spacing: -0.03121rem;
@@ -229,19 +229,19 @@ table {
   .nio-heading--inverted:link, .nio-heading--inverted:visited {
     color: #fffefe; }
 
-.nio-table, .nio-html table {
+.nio-table {
   margin-left: auto;
   margin-right: auto;
   min-width: 100%; }
-  .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th, .nio-table > tbody td, .nio-html table > tbody td, .nio-table > tbody th, .nio-html table > tbody th, .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th {
+  .nio-table > thead td, .nio-table > thead th, .nio-table > tbody td, .nio-table > tbody th, .nio-table > thead td, .nio-table > thead th {
     padding: 0.66667rem 0.66667rem; }
-  .nio-table > thead th, .nio-html table > thead th, .nio-table > tbody th, .nio-html table > tbody th, .nio-table > thead th, .nio-html table > thead th {
+  .nio-table > thead th, .nio-table > tbody th, .nio-table > thead th {
     font-size: 0.74915rem;
     font-weight: 600;
     text-align: left; }
-  .nio-table > thead td, .nio-html table > thead td, .nio-table > thead th, .nio-html table > thead th {
+  .nio-table > thead td, .nio-table > thead th {
     border-bottom: 0.16667rem solid #dfdede; }
-  .nio-table > tbody tr:nth-child(3n+1) td, .nio-html table > tbody tr:nth-child(3n+1) td, .nio-table > tbody tr:nth-child(3n+1) th, .nio-html table > tbody tr:nth-child(3n+1) th {
+  .nio-table > tbody tr:nth-child(3n+1) td, .nio-table > tbody tr:nth-child(3n+1) th {
     border-top: 0.08333rem dotted #dfdede; }
 
 .nio-table--striped > tbody tr:nth-child(odd) td, .nio-table--striped > tbody tr:nth-child(odd) th {
@@ -251,7 +251,7 @@ table {
   box-sizing: border-box;
   background-color: transparent;
   border-color: currentcolor;
-  font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
+  font: normal 400 12pt / 1.5 sans-serif;
   font-weight: 600;
   color: #746767;
   background-image: linear-gradient(65deg, rgba(116, 103, 103, 0.075) 0%, transparent 10%, transparent 90%, rgba(116, 103, 103, 0.075) 100%);
@@ -304,7 +304,7 @@ table {
   .nio-button-bar--grow .nio-button, .nio-button-bar--grow .nio-form__button {
     flex-grow: 1; }
 
-.nio-bordered, .nio-button, .nio-form__button, .nio-form__text-field, .nio-quote--blockquote::before, .nio-html blockquote::before {
+.nio-bordered, .nio-button, .nio-form__button, .nio-form__text-field, .nio-quote--blockquote::before {
   border-width: 0.16667rem;
   border-style: solid;
   border-radius: 0.33333rem; }
@@ -328,7 +328,7 @@ table {
 
 .nio-form__text-field {
   box-sizing: border-box;
-  font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
+  font: normal 400 12pt / 1.5 sans-serif;
   padding: 1rem 1rem;
   width: 100%;
   background-color: #dfdede;
@@ -340,39 +340,39 @@ table {
     outline: 0;
     border-color: #c6c4c4; }
 
-.nio-list, .nio-html ul, .nio-html ol {
+.nio-list {
   display: block; }
-  .nio-list--numbered, .nio-html ol {
+  .nio-list--numbered {
     padding-left: 3ch;
     list-style-type: decimal; }
-  .nio-list--bulleted, .nio-html ul {
+  .nio-list--bulleted {
     padding-left: 3ch;
     list-style-type: disc; }
-  .nio-list__item, .nio-html ul > li, .nio-html ol > li {
+  .nio-list__item {
     margin-top: 0.66667rem;
     margin-bottom: 0.66667rem; }
 
-.nio-definition, .nio-html dl {
+.nio-definition {
   margin-left: -2ch;
   text-indent: 2ch; }
-  .nio-definition__def, .nio-html dl > dd, .nio-definition__term, .nio-html dl > dt {
+  .nio-definition__def, .nio-definition__term {
     display: inline; }
-  .nio-definition__term, .nio-html dl > dt {
+  .nio-definition__term {
     font-weight: 600;
     letter-spacing: -0.04rem; }
-    .nio-definition__term::after, .nio-html dl > dt::after {
+    .nio-definition__term::after {
       content: "\a0\00B7"; }
 
-.nio-stack-shadow, .nio-quote--blockquote, .nio-html blockquote, .nio-code-block, .nio-html pre {
+.nio-stack-shadow, .nio-quote--blockquote, .nio-code-block {
   box-shadow: 0 0.66667rem 0 -0.375rem #dfdede; }
 
-.nio-quote, .nio-html q, .nio-html blockquote {
+.nio-quote {
   quotes: "\201c" "\201d" "\2018" "\2019"; }
-  .nio-quote--inline::before, .nio-html q::before {
+  .nio-quote--inline::before {
     content: open-quote; }
-  .nio-quote--inline::after, .nio-html q::after {
+  .nio-quote--inline::after {
     content: close-quote; }
-  .nio-quote--blockquote, .nio-html blockquote {
+  .nio-quote--blockquote {
     display: block;
     box-sizing: border-box;
     padding: 1rem 2rem;
@@ -383,7 +383,7 @@ table {
     padding: 3rem;
     margin-left: auto;
     margin-right: auto; }
-    .nio-quote--blockquote::before, .nio-html blockquote::before {
+    .nio-quote--blockquote::before {
       content: '\f10d';
       font-family: fontawesome;
       position: absolute;
@@ -400,26 +400,26 @@ table {
       border-bottom-width: 0;
       color: #dfdede; }
 
-.nio-code, .nio-html code {
-  font: normal 500 0.74915rem / 1.1875 "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+.nio-code {
+  font: normal 500 0.74915rem / 1.1875 monospace;
   background-color: #f8f7f7;
   border-radius: 0.16667rem;
   padding: 0.5rem 0;
   border-bottom: 0.08333rem solid #dfdede; }
-  .nio-code::before, .nio-html code::before, .nio-code::after, .nio-html code::after {
-    font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif;
+  .nio-code::before, .nio-code::after {
+    font: normal 400 12pt / 1.5 sans-serif;
     content: "\A0"; }
-  .nio-code--in-block, .nio-html pre code {
+  .nio-code--in-block {
     padding: 0;
     margin: 0;
     white-space: pre;
     margin-top: 0;
     background-color: transparent;
     border: 0; }
-    .nio-code--in-block::before, .nio-html pre code::before, .nio-code--in-block::after, .nio-html pre code::after {
+    .nio-code--in-block::before, .nio-code--in-block::after {
       content: none; }
 
-.nio-code-block, .nio-html pre {
+.nio-code-block {
   overflow: auto;
   margin-left: auto;
   margin-right: auto;
@@ -427,28 +427,24 @@ table {
   box-sizing: border-box; }
 
 .nio-sans {
-  font: normal 400 12pt / 1.5 "Open Sans", Helvetica, Arial, sans serif; }
+  font: normal 400 12pt / 1.5 sans-serif; }
 
 .nio-mono {
-  font: normal 500 0.74915rem / 1.1875 "Source Code Pro", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+  font: normal 500 0.74915rem / 1.1875 monospace; }
 
-.nio-emphasis, .nio-html em {
+.nio-emphasis {
   font-style: italic; }
 
-.nio-link, .nio-html :link, .nio-html :visited {
+.nio-link {
   text-decoration: none;
   color: #CE202A; }
-  .nio-link:hover, .nio-html :hover:link, .nio-html :hover:visited, .nio-link:active, .nio-html :active:link, .nio-html :active:visited, .nio-link:focus, .nio-html :focus:link, .nio-html :focus:visited {
+  .nio-link:hover, .nio-link:active, .nio-link:focus {
     text-decoration: none;
     outline: 0; }
 
-.nio-sscript, .nio-html sup, .nio-html sub {
+.nio-sscript {
   font-size: 58.3%; }
-  .nio-sscript--super, .nio-html sup {
+  .nio-sscript--super {
     vertical-align: super; }
-  .nio-sscript--sub, .nio-html sub {
+  .nio-sscript--sub {
     vertical-align: sub; }
-
-.nio-html p, .nio-html pre {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem; }
