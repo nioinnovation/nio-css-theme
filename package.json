@@ -8,13 +8,15 @@
   "description": "The n.io SCSS framework and theme for nuik.",
   "scripts": {
     "prebuild": "rimraf dist/",
-    "build": "postcss -s postcss-scss --use postcss-cssnext ./standalone/nio.scss | node-sass --include-path . | postcss --use cssnano --cssnano.autoprefixer=false -o dist/nio.bem.all.min.scss",
+    "build": "postcss -s postcss-scss --use postcss-cssnext ./bem/all.scss | node-sass --include-path . | postcss --use cssnano --cssnano.autoprefixer=false -o dist/nio.bem.min.css",
+    "watch": "chokidar '**/*.scss' -c 'npm run build'",
     "test": "mocha ./test"
   },
   "author": "J. Holmes",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
+    "chokidar-cli": "^1.2.0",
     "cssnano": "^3.10.0",
     "mocha": "^3.2.0",
     "node-sass": "^4.1.0",

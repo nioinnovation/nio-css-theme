@@ -1,0 +1,16 @@
+@import "shared/components/button";
+
+.#{$prefix}button {
+  @extend %nio-button;
+
+  &--primary { @extend %nio-button--primary; }
+  &--alternate { @extend %nio-button--alternate; }
+  &--affirmative { @extend %nio-button--affirmative; }
+  &--warning { @extend %nio-button--warning; }
+  &--danger { @extend %nio-button--danger; }
+
+  &--huge { @extend %nio-button--huge !optional; }
+  &--large { @extend %nio-button--large !optional; }
+  &--small { @extend %nio-button--small !optional; }
+  &--tiny { @extend %nio-button--tiny !optional; }
+}

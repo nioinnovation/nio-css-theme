@@ -1,7 +1,44 @@
-%n-button {
-  background-color: blue;
+// Base
+@mixin nio-button--colorize($background, $foreground) {
+  background-color: $background;
+  color: $foreground;
+  border-color: $background;
 }
 
-%n-button--hover {
-  background-color: orange;
+%nio-button {
+  @include nio-button--colorize($palette-light, $palette-black);
+  border-width: 1px;
+  border-style: solid;
+  padding: 0.25rem 1rem;
+  min-width: 10rem;
+  min-height: 2.5rem;
+  border-radius: 2rem;
+  font: normal 300 13pt / 1.5 Lato, sans-serif;
+  line-height: 1;
+  box-shadow: 0 0.5rem 1rem -0.5em rgba($palette-black, 0.25);
+  box-sizing: border-box;
+  outline: 0;
+  margin-bottom: 0.5rem;
+  background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
+}
+
+// Variants
+%nio-button--primary {
+  @include nio-button--colorize($palette-primary, $palette-white);
+}
+
+%nio-button--alternate {
+  @include nio-button--colorize($palette-alternate, $palette-white);
+}
+
+%nio-button--affirmative {
+  @include nio-button--colorize($palette-affirmative, $palette-white);
+}
+
+%nio-button--warning {
+  @include nio-button--colorize($palette-warning, $palette-white);
+}
+
+%nio-button--danger {
+  @include nio-button--colorize($palette-danger, $palette-white);
 }
