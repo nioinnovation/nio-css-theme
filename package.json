@@ -8,7 +8,7 @@
   "description": "The n.io SCSS framework and theme for nuik.",
   "scripts": {
     "prebuild": "rimraf dist/",
-    "build": "postcss -s postcss-scss --use postcss-cssnext ./standalone/nio.scss | node-sass --include-path shared",
+    "build": "postcss -s postcss-scss --use postcss-cssnext ./standalone/nio.scss | node-sass --include-path . | postcss --use cssnano --cssnano.autoprefixer=false -o dist/nio.bem.all.min.scss",
     "test": "mocha ./test"
   },
   "author": "J. Holmes",
