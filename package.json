@@ -1,0 +1,27 @@
+{
+  "name": "nio-scss",
+  "version": "3.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nioinnovation/nio-scss"
+  },
+  "description": "The n.io SCSS framework and theme for nuik.",
+  "scripts": {
+    "prebuild": "rimraf dist/",
+    "build": "postcss -s postcss-scss --use postcss-cssnext ./standalone/nio.scss | node-sass --include-path shared",
+    "test": "mocha ./test"
+  },
+  "author": "J. Holmes",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cssnano": "^3.10.0",
+    "mocha": "^3.2.0",
+    "node-sass": "^4.1.0",
+    "postcss-cli": "^2.6.0",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-modules": "^0.6.2",
+    "postcss-scss": "^0.4.0",
+    "rimraf": "^2.5.4"
+  }
+}

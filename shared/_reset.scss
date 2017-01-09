@@ -1,0 +1,60 @@
+%reset--base {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+%reset--html5 {
+  /* HTML5 display-role reset for older browsers */
+  display: block;
+}
+
+%reset--lists {
+  list-style: none;
+}
+
+%reset--quotes {
+  quotes: none;
+  &::before, &::after {
+    content: none;
+  }
+}
+%reset--tables {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@mixin reset__global {
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    @extend %reset--base;
+  }
+
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    @extend %reset--html5;
+  }
+  ol, ul {
+    @extend %reset--lists;
+  }
+  blockquote, q {
+    @extend %reset--quotes;
+  }
+  table {
+    @extend %reset--tables;
+  }
+}
