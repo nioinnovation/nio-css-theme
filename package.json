@@ -12,8 +12,8 @@
     "prepublish": "npm run build",
     "test": "mocha ./test"
   },
-  "author": "J. Holmes",
-  "license": "MIT",
+  "author": "n.io <info@n.io>",
+  "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
     "cssnano": "^3.10.0",
