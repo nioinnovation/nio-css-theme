@@ -1,6 +1,7 @@
 {
-  "name": "nuik-nio",
-  "version": "3.0.0",
+  "name": "nio-css-theme",
+  "description": "nio theme for BEM and nuik",
+  "version": "2.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/nioinnovation/nio-scss"
