@@ -8,6 +8,7 @@
   "description": "The n.io SCSS framework and theme for nuik.",
   "scripts": {
     "build": "gulp",
+    "prepublish": "npm run build",
     "test": "mocha ./test"
   },
   "author": "J. Holmes",
