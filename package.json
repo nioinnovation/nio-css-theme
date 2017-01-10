@@ -7,23 +7,22 @@
   },
   "description": "The n.io SCSS framework and theme for nuik.",
   "scripts": {
-    "prebuild": "rimraf dist/",
-    "build": "postcss -s postcss-scss --use postcss-cssnext ./bem/all.scss | node-sass --include-path . | postcss --use cssnano --cssnano.autoprefixer=false -o dist/nio.bem.min.css",
-    "watch": "chokidar '**/*.scss' -c 'npm run build'",
+    "build": "gulp",
     "test": "mocha ./test"
   },
   "author": "J. Holmes",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.5.0",
-    "chokidar-cli": "^1.2.0",
     "cssnano": "^3.10.0",
+    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-postcss": "^6.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "mocha": "^3.2.0",
-    "node-sass": "^4.1.0",
-    "postcss-cli": "^2.6.0",
     "postcss-cssnext": "^2.9.0",
     "postcss-modules": "^0.6.2",
-    "postcss-scss": "^0.4.0",
-    "rimraf": "^2.5.4"
+    "postcss-scss": "^0.4.0"
   }
 }
