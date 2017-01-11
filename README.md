@@ -1,6 +1,6 @@
-# nuik-nio
+# nio-css-theme
 
-A nio theme, with nuik support.
+A nio theme, with BEM and nuik support.
 
 ## Roadmap
 
