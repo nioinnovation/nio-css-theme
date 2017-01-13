@@ -14,5 +14,7 @@ $palette-light: #E6E9EE !default;
 $palette-dark:  #576265 !default;
 $palette-black: #262F31 !default;
 
+$palette-shadow: rgba($palette-black, 0.25);
+
 // Typography
 $font-family: Lato, sans serif !default;
