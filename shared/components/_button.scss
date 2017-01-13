@@ -1,14 +1,15 @@
 // Base
-@mixin nio-button--colorize($background, $foreground) {
+@mixin nio-button--colorize($background, $foreground, $ghost: rgba($background, 0.5)) {
   $button-animation: unique-id();
-  $ghost: transparentize($background, 0.5);
   background-color: $background;
   color: $foreground;
   border-color: $background;
-  &:focus,
-  &:hover{
-    background-color: lighten($background, 5%);
-    transform: scale(1.03);
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background-color: lighten($background, 5%);
+      transform: scale(1.03);
+    }
   }
   &:active {
     animation: $button-animation 200ms forwards;
@@ -46,18 +47,12 @@
   margin-bottom: 0.5rem;
   background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
 
-	&:disabled {
+  &:disabled {
     cursor: default;
-		border: 1px solid $palette-light;
+    border: 1px solid $palette-light;
     background-color: transparent;
     color: $palette-light;
     box-shadow: none;
-
-		&:focus,
-		&:hover {
-      background-color: transparent;
-      transform: scale(1);
-    }
   }
 }
 
