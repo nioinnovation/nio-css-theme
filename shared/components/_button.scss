@@ -11,20 +11,21 @@
     transform: scale(1.03);
   }
   &:active {
-    animation: $button-animation 300ms forwards;
+    animation: $button-animation 200ms forwards;
   }
   @keyframes #{$button-animation} {
     0% {
-      box-shadow: 0 0 0 3px $ghost;
+     background-color: darken($background, 5%);
     }
-    25% {
-      box-shadow: 0 0 0 8px $ghost;
+    10% {
+      box-shadow: 0 0 5px 2px $ghost;
+      background-color: darken($background, 5%);
     }
-    75% {
-      box-shadow: 0 0 6px 2px $foreground inset;
+    90% {
+      box-shadow: 0 0 0 13px transparentize($ghost, 0.2);
     }
     100% {
-      box-shadow: 2px 2px 14px 1px $ghost inset;
+      box-shadow: 0 0 0 18px transparent;
     }
   }
 }
