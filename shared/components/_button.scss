@@ -1,8 +1,34 @@
 // Base
-@mixin nio-button--colorize($background, $foreground) {
+@mixin nio-button--colorize($background, $foreground, $ghost: rgba($background, 0.5)) {
+  $button-animation: unique-id();
   background-color: $background;
   color: $foreground;
   border-color: $background;
+  &:not(:disabled) {
+    &:focus,
+    &:hover {
+      background-color: lighten($background, 5%);
+      transform: scale(1.03);
+    }
+  }
+  &:active {
+    animation: $button-animation 200ms forwards;
+  }
+  @keyframes #{$button-animation} {
+    0% {
+     background-color: darken($background, 5%);
+    }
+    10% {
+      box-shadow: 0 0 5px 2px $ghost;
+      background-color: darken($background, 5%);
+    }
+    90% {
+      box-shadow: 0 0 0 13px transparentize($ghost, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 18px transparent;
+    }
+  }
 }
 
 %nio-button {
@@ -15,11 +41,19 @@
   border-radius: 2rem;
   font: normal 300 13pt / 1.5 Lato, sans-serif;
   line-height: 1;
-  box-shadow: 0 0.5rem 1rem -0.5em rgba($palette-black, 0.25);
+  box-shadow: 0 0.5rem 1rem -0.5em $palette-shadow;
   box-sizing: border-box;
   outline: 0;
   margin-bottom: 0.5rem;
   background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
+
+  &:disabled {
+    cursor: default;
+    border: 1px solid $palette-light;
+    background-color: transparent;
+    color: $palette-light;
+    box-shadow: none;
+  }
 }
 
 // Variants
