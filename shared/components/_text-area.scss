@@ -1,0 +1,63 @@
+$timing: 120ms;
+$top-padding: 1.25rem;
+
+%text-input {
+  display: block;
+  position: relative;
+  padding: 0.25rem;
+  padding-top: $top-padding;
+}
+
+%text-input--common {
+  border-radius: 5px;
+  border: 1px solid $palette-light;
+  outline: 0;
+  box-shadow: inset 0 0 0.5rem $palette-light;
+  transition: box-shadow $timing;
+
+  &:focus {
+    border-color: $palette-primary;
+    box-shadow: 0 0 0.2rem $palette-primary;
+  }
+}
+
+%text-input--singleline {
+  @extend %text-input--common;
+  height: 1rem * 2.5;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  font: inherit;
+}
+
+%text-input__label {
+  display: block;
+  position: absolute;
+  top: ((1rem * 2.5) / 2 + $top-padding);
+  left: 1rem;
+  transform: translatey(-50%);
+  color: $palette-light;
+  opacity: 1;
+  transition: top $timing, left $timing, font-size $timing, color $timing, opacity $timing;
+  pointer-events: none;
+}
+
+%text-input__label--with-focus {
+  top:  $top-padding / 2;
+  left: 0.75rem;
+  font-size: 0.7em;
+  color: $palette-primary;
+}
+
+%text-input__label--with-value {
+  top:  $top-padding / 2;
+  left: 0.75rem;
+  font-size: 0.7em;
+}
+
+%text-input__helper {
+  display: block;
+  font-size: 0.7em;
+  text-align: right;
+  padding-right: 0.5rem;
+}

@@ -1,0 +1,9 @@
+@import "shared/core";
+@import "shared/components/text-area";
+
+.textInput { @extend %text-input; }
+.singleline { @extend %text-input--singleline; }
+.label { @extend %text-input__label; }
+.labelWithFocus { @extend %text-input__label--with-focus; }
+.labelWithValue { @extend %text-input__label--with-value; }
+.helper { @extend %text-input__helper; }
