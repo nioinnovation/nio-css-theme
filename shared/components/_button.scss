@@ -1,9 +1,11 @@
 // Base
 @mixin nio-button--colorize($background, $foreground, $ghost: rgba($background, 0.5)) {
   $button-animation: unique-id();
+
   background-color: $background;
   color: $foreground;
   border-color: $background;
+
   &:not(:disabled) {
     &:focus,
     &:hover {
@@ -11,9 +13,11 @@
       transform: scale(1.03);
     }
   }
+
   &:active {
     animation: $button-animation 200ms forwards;
   }
+
   @keyframes #{$button-animation} {
     0% {
      background-color: darken($background, 5%);
@@ -39,7 +43,7 @@
   min-width: 10rem;
   min-height: 2.5rem;
   border-radius: 2rem;
-  font: normal 300 13pt / 1.5 Lato, sans-serif;
+  font: inherit;
   line-height: 1;
   box-shadow: 0 0.5rem 1rem -0.5em $palette-shadow;
   box-sizing: border-box;
