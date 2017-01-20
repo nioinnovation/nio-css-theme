@@ -44,7 +44,7 @@
   min-height: 2.5rem;
   border-radius: 2rem;
   font: inherit;
-  line-height: 1;
+  line-height: $font-line-height-tight;
   box-shadow: 0 0.5rem 1rem -0.5em $palette-shadow;
   box-sizing: border-box;
   outline: 0;
