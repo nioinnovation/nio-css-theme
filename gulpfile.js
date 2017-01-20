@@ -40,5 +40,5 @@ gulp.task('css:modules', () =>
 gulp.task('default', gulp.series('clean', gulp.parallel('css:bem', 'css:modules')));
 
 gulp.task('watch', () =>
-  gulp.watch(['bem/**/*.scss', 'shared/**/*.scss', 'modules/**/*.js'], gulp.parallel('css:bem', 'css:modules'))
+  gulp.watch(['bem/**/*.scss', 'shared/**/*.scss', 'modules/**/*.scss'], gulp.parallel('css:bem', 'css:modules'))
 );
