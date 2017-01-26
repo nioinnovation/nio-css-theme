@@ -44,11 +44,11 @@
   min-height: 2.5rem;
   border-radius: 2rem;
   font: inherit;
-  line-height: $font-line-height-tight;
+  line-height: 1;
   box-shadow: 0 0.5rem 1rem -0.5em $palette-shadow;
   box-sizing: border-box;
   outline: 0;
-  margin-bottom: 0.5rem;
+  cursor: pointer;
   background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
 
   &:disabled {
