@@ -1,0 +1,11 @@
+@import "shared/components/text-area";
+
+.#{$prefix}text-input {
+  @extend %nio-text-input;
+
+  &--singleline { @extend %nio-text-input--singleline; }
+  &__label { @extend %nio-text-input__label; }
+  &__label--with-focus { @extend %nio-text-input__label--with-focus; }
+  &__label--with-value { @extend %nio-text-input__label--with-value; }
+  &__helper { @extend %nio-text-input__helper; }
+}

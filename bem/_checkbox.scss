@@ -1,0 +1,8 @@
+@import "shared/components/text-area";
+
+.#{$prefix}text-input {
+  @extend %nio-checkbox;
+
+  &--block { @extend %nio-checkbox--block; }
+  &--inline { @extend %nio-checkbox--inline; }
+}
