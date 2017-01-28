@@ -1,14 +1,14 @@
 $timing: 120ms;
 $top-padding: 1.25rem;
 
-%text-input {
+%nio-text-input {
   display: block;
   position: relative;
   padding: 0.25rem;
   padding-top: $top-padding;
 }
 
-%text-input--common {
+%nio-text-input--common {
   border-radius: 10px;
   border: 1px solid $palette-light;
   outline: 0;
@@ -21,8 +21,8 @@ $top-padding: 1.25rem;
   }
 }
 
-%text-input--singleline {
-  @extend %text-input--common;
+%nio-text-input--singleline {
+  @extend %nio-text-input--common;
   height: 1rem * 2.5;
   width: 100%;
   box-sizing: border-box;
@@ -30,7 +30,7 @@ $top-padding: 1.25rem;
   font: inherit;
 }
 
-%text-input__label {
+%nio-text-input__label {
   display: block;
   position: absolute;
   top: ((1rem * 2.5) / 2 + $top-padding);
@@ -42,20 +42,20 @@ $top-padding: 1.25rem;
   pointer-events: none;
 }
 
-%text-input__label--with-focus {
+%nio-text-input__label--with-focus {
   top:  $top-padding / 2;
   left: 0.75rem;
   font-size: $font-size-small;
   color: $palette-primary;
 }
 
-%text-input__label--with-value {
+%nio-text-input__label--with-value {
   top:  $top-padding / 2;
   left: 0.75rem;
   font-size: $font-size-small;
 }
 
-%text-input__helper {
+%nio-text-input__helper {
   display: block;
   font-size: $font-size-small;
   text-align: right;

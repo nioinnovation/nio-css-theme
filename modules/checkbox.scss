@@ -3,5 +3,6 @@
 
 .checkbox { @extend %nio-checkbox; }
 
-.block { @extend %nio-checkbox--block; }
-.inline { @extend %nio-checkbox--inline; }
+.input { @extend %nio-checkbox__input; }
+.label { @extend %nio-checkbox__label; }
+.checked { @extend %nio-checkbox__label--checked; }
