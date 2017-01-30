@@ -1,4 +1,4 @@
-$icon: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2hlY2siIGNsYXNzPSJtYXJrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNSAtMjUgNTAgNTAiIHdpZHRoPSI1MCI+CiAgPHBhdGggY2xhc3M9ImNoZWNrbWFya19fY2hlY2siIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNnB4IiBkPSJNLTE1IDAgLTQgMTAgMTIgLTkiLz4KPC9zdmc+);
+$icon: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2hlY2siIGNsYXNzPSJtYXJrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNSAtMjUgNTAgNTAiIHdpZHRoPSI1MCI+CiAgPHBhdGggY2xhc3M9ImNoZWNrbWFya19fY2hlY2siIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNnB4IiBkPSJNLTE1IDAgLTQgMTAgMTIgLTkiLz4KPC9zdmc+');
 
 
 $checkbox-animation: unique-id();
@@ -38,7 +38,7 @@ $checkbox-animation: unique-id();
 %nio-checkbox__label {
   font-size: $font-size-small;
   color:$palette-black;
-  &::before{
+  &::before {
     display: inline-block;
     content: '';
     width: .75em;
@@ -55,9 +55,11 @@ $checkbox-animation: unique-id();
       border: 1px solid $palette-primary;
     }
   }
-  &--checked {
-    &::before {
-      animation: $checkbox-animation 500ms forwards;
-    }
+}
+
+%nio-checkbox__label--checked {
+  @extend %nio-checkbox__label;
+  &::before {
+    animation: $checkbox-animation 500ms forwards;
   }
 }
