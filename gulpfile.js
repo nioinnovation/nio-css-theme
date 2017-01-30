@@ -8,7 +8,11 @@ const scss = require('postcss-scss');
 const cssnext = require('postcss-cssnext');
 const cssnano = require('cssnano');
 
-const scssConfig = { syntax: scss };
+const postCssConfig = { syntax: scss };
+const scssConfig = {
+  includePaths: ['.'],
+};
+
 const processors = {
   pre: [ cssnext() ],
   post: [ cssnano() ],
@@ -21,8 +25,8 @@ gulp.task('clean', () =>
 
 gulp.task('css:bem', () =>
   gulp.src('./bem/all.scss')
-    .pipe(postcss(processors.pre, scssConfig))
-    .pipe(sass())
+    .pipe(postcss(processors.pre, postCssConfig))
+    .pipe(sass(scssConfig))
     .pipe(rename('nio.bem.css'))
     .pipe(gulp.dest('./dist'))
     .pipe(postcss(processors.post))
@@ -32,8 +36,8 @@ gulp.task('css:bem', () =>
 
 gulp.task('css:modules', () =>
   gulp.src('./modules/**/*.scss')
-    .pipe(postcss(processors.pre, scssConfig))
-    .pipe(sass())
+    .pipe(postcss(processors.pre, postCssConfig))
+    .pipe(sass(scssConfig))
     .pipe(gulp.dest('./dist/modules'))
 );
 
