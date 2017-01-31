@@ -29,6 +29,8 @@ $checkbox-animation: unique-id();
 
 %nio-checkbox {
   display: inline-block;
+  margin-right: 0.75rem;
+  cursor: pointer;
 }
 
 %nio-checkbox__input {
