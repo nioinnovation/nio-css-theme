@@ -6,7 +6,7 @@
   color: $foreground;
   border-color: $background;
 
-  &:not(:disabled) {
+  &:not(:disabled):not(.disabled) {
     &:focus,
     &:hover {
       background-color: lighten($background, 5%);
@@ -52,7 +52,8 @@
   background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
   margin: 0.5rem;
 
-  &:disabled {
+  &:disabled,
+  %nio-button--disabled {
     cursor: default;
     border: 1px solid $palette-light;
     background-color: transparent;
@@ -86,4 +87,11 @@
 
 %nio-button--danger {
   @include nio-button--colorize($palette-danger, $palette-white);
+}
+%nio-button--disabled {
+  cursor: default;
+  border: 1px solid $palette-light;
+  background-color: transparent;
+  color: $palette-light;
+  box-shadow: none;
 }
