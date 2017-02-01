@@ -2,6 +2,7 @@
 @import "shared/components/button";
 
 .button { @extend %nio-button; }
+.link { @extend %nio-button--link; }
 
 .primary { @extend %nio-button--primary; }
 .alternate { @extend %nio-button--alternate; }

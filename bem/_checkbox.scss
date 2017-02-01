@@ -1,0 +1,9 @@
+@import "shared/components/checkbox";
+
+.#{$prefix}checkbox {
+  @extend %nio-checkbox;
+
+  &__input { @extend %nio-checkbox__input; }
+  &__label { @extend %nio-checkbox__label; }
+  &__label--checked { @extend %nio-checkbox__label--checked; }
+}
