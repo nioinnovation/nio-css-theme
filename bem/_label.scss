@@ -1,0 +1,19 @@
+@import "shared/components/label";
+
+.#{$prefix}label {
+  @extend %nio-label;
+
+  a#{&} { @extend %nio-label--link; }
+
+  &--primary { @extend %nio-label--primary; }
+  &--alternate { @extend %nio-label--alternate; }
+  &--affirmative { @extend %nio-label--affirmative; }
+  &--warning { @extend %nio-label--warning; }
+  &--danger { @extend %nio-label--danger; }
+  &--disabled { @extend %nio-label--danger; }
+
+  &--huge { @extend %nio-label--huge !optional; }
+  &--large { @extend %nio-label--large !optional; }
+  &--small { @extend %nio-label--small !optional; }
+  &--tiny { @extend %nio-label--tiny !optional; }
+}
