@@ -3,6 +3,8 @@
 .#{$prefix}button {
   @extend %nio-button;
 
+  a#{&} { @extend %nio-button--link; }
+
   &--primary { @extend %nio-button--primary; }
   &--alternate { @extend %nio-button--alternate; }
   &--affirmative { @extend %nio-button--affirmative; }

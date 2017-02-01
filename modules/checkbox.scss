@@ -1,0 +1,8 @@
+@import "shared/core";
+@import "shared/components/checkbox";
+
+.checkbox { @extend %nio-checkbox; }
+
+.input { @extend %nio-checkbox__input; }
+.label { @extend %nio-checkbox__label; }
+.checked { @extend %nio-checkbox__label--checked; }

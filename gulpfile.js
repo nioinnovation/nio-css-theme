@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const rename = require('gulp-rename');
-const clean = require('gulp-clean');
 
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
@@ -17,11 +16,6 @@ const processors = {
   pre: [ cssnext() ],
   post: [ cssnano() ],
 };
-
-gulp.task('clean', () =>
-    gulp.src('./dist/**/*', { read: false })
-      .pipe(clean())
-);
 
 gulp.task('css:bem', () =>
   gulp.src('./bem/all.scss')
@@ -41,7 +35,7 @@ gulp.task('css:modules', () =>
     .pipe(gulp.dest('./dist/modules'))
 );
 
-gulp.task('default', gulp.series('clean', gulp.parallel('css:bem', 'css:modules')));
+gulp.task('default', gulp.parallel('css:bem', 'css:modules'));
 
 gulp.task('watch', () =>
   gulp.watch(['bem/**/*.scss', 'shared/**/*.scss', 'modules/**/*.scss'], gulp.parallel('css:bem', 'css:modules'))
