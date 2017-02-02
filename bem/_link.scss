@@ -3,8 +3,6 @@
 .#{$prefix}link {
   @extend %nio-link;
 
-  a#{&} { @extend %nio-link--link; }
-
   &--icon { @extend %nio-link--icon; }
   &--count { @extend %nio-link--count; }
 }

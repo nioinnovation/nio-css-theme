@@ -2,6 +2,8 @@
 %nio-link {
   color: $palette-primary;
   text-decoration: none;
+  margin-right: 1rem;
+  cursor: pointer;
 
   &:hover {
     color: $palette-dark;
@@ -10,5 +12,29 @@
 
 // Variants
 %nio-link--icon {
-  // @include nio-link--colorize($palette-primary, $palette-white);
+  display:inline-block;
+  &:before {
+    content: attr(data-icon);
+    margin-right: 0.25rem;
+  }
+}
+
+%nio-link--count {
+  display:inline-block;
+  margin-right: 1.5rem;
+  position:relative;
+  &:after {
+    content: attr(data-count);
+    margin-left: 0.25rem;
+    background: #3CAFDA;
+    border-radius: 20%;
+    padding: .1rem .35rem;
+    color: #fff;
+    font-size: .8rem;
+    position: absolute;
+    top: -0.75rem;
+    display: block;
+    right: -1rem;
+    transform: scale(.8);
+  }
 }
