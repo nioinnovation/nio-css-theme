@@ -1,0 +1,14 @@
+// Base
+%nio-link {
+  color: $palette-primary;
+  text-decoration: none;
+
+  &:hover {
+    color: $palette-dark;
+  }
+}
+
+// Variants
+%nio-link--icon {
+  // @include nio-link--colorize($palette-primary, $palette-white);
+}
