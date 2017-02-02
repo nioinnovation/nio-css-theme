@@ -10,6 +10,7 @@
   &--affirmative { @extend %nio-button--affirmative; }
   &--warning { @extend %nio-button--warning; }
   &--danger { @extend %nio-button--danger; }
+  &--disabled { @extend %nio-button--disabled; }
 
   &--huge { @extend %nio-button--huge !optional; }
   &--large { @extend %nio-button--large !optional; }
