@@ -1,7 +1,7 @@
 {
   "name": "nio-css-theme",
   "description": "The n.io SCSS framework and theme for nuik.",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/nioinnovation/nio-scss"
