@@ -6,12 +6,10 @@
   color: $foreground;
   border-color: $background;
 
-  &:not(:disabled):not(.disabled) {
-    &:focus,
-    &:hover {
-      background-color: lighten($background, 5%);
-      transform: scale(1.03);
-    }
+  &:focus,
+  &:hover {
+    background-color: lighten($background, 5%);
+    transform: scale(1.03);
   }
 
   &:active {
@@ -51,21 +49,29 @@
   cursor: pointer;
   background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
   margin: 0.5rem;
-
-  &:disabled,
-  %nio-button--disabled {
-    cursor: default;
-    border: 1px solid $palette-light;
-    background-color: transparent;
-    color: $palette-light;
-    box-shadow: none;
-  }
 }
 
 %nio-button--link {
+  text-decoration: none;
   display: inline-block;
   text-align: center;
   line-height: 1.9rem;
+}
+
+%nio-button--disabled {
+  cursor: default;
+  border: 1px solid $palette-light;
+  background-color: rgba($palette-light, 0.1);
+  color: $palette-light;
+  box-shadow: none;
+  &:focus,
+  &:hover {
+    background-color: rgba($palette-light, 0.1);
+    transform: none;
+  }
+  &:active {
+    animation: none;
+  }
 }
 
 // Variants
@@ -87,12 +93,4 @@
 
 %nio-button--danger {
   @include nio-button--colorize($palette-danger, $palette-white);
-}
-
-%nio-button--disabled {
-  cursor: default;
-  border: 1px solid $palette-light;
-  background-color: transparent;
-  color: $palette-light;
-  box-shadow: none;
 }
