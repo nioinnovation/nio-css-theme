@@ -1,117 +1,131 @@
-$icon: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2hlY2siIGNsYXNzPSJtYXJrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNSAtMjUgNTAgNTAiIHdpZHRoPSI1MCI+CiAgPHBhdGggY2xhc3M9ImNoZWNrbWFya19fY2hlY2siIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNnB4IiBkPSJNLTE1IDAgLTQgMTAgMTIgLTkiLz4KPC9zdmc+');
+$icon-check: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2hlY2siIGNsYXNzPSJtYXJrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNSAtMjUgNTAgNTAiIHdpZHRoPSI1MCI+CiAgPHBhdGggY2xhc3M9ImNoZWNrbWFya19fY2hlY2siIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNnB4IiBkPSJNLTE1IDAgLTQgMTAgMTIgLTkiLz4KPC9zdmc+');
+
+$icon-indeterminate: '-';
+
+// these need to be mixins because placeholders can't be used in keyframes
+@mixin empty() {
+  width: 1rem;
+  height: 1rem;
+  opacity: 0;
+  background-image: none;
+}
+
+@mixin fill($icon: $icon-check) {
+  opacity: 1;
+  border: none;
+  background-image: $icon;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: scale(1);
+}
 
 $checkbox-animation: unique-id();
 
+@keyframes #{$checkbox-animation} {
+  0% { @include empty(); }
+  60% {
+    opacity: 0.3;
+    transform: scale(2.0);
+  }
+  100% { @include fill(); }
+}
+
 %nio-checkbox {
-    display: inline-block;
-    margin-right: 0.75rem;
-    cursor: pointer;
+  display: inline-block;
+  margin-right: 0.75rem;
+  cursor: pointer;
 }
 
 %nio-checkbox__input {
-    display: none;
+  display: none;
 }
 
 %nio-checkbox__label {
-    display: inline-block;
-    position: relative;
-    margin-left: 1.5rem;
-    padding-left: 0.4rem;
-    color: $palette-black;
-    font-size: $font-size-small;
+  display: inline-block;
+  position: relative;
+  margin-left: 1.5rem;
+  padding-left: 0.4rem;
+  color: $palette-black;
+  font-size: $font-size-small;
 
+  &:hover {
     &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -1px;
-        left: -15px;
-        width: 1rem;
-        height: 1rem;
-        margin: 0 0.5em 0 0;
-        border-radius: 50%;
-        box-shadow: 0 0 0 1px gray;
-        cursor: pointer;
+      box-shadow: 0 0 0 1px $palette-primary;
     }
+  }
 
-    &::after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -1px;
-        left: -15px;
-        width: 1rem;
-        height: 1rem;
-        opacity: 0;
-        border-radius: 100%;
-        transform: scale(0);
-    }
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -15px;
+    width: 1rem;
+    height: 1rem;
+    margin: 0 0.5em 0 0;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px $palette-dark;
+    cursor: pointer;
+  }
 
-    &:hover {
-        &::before {
-            box-shadow: 0 0 0 1px $palette-primary;
-        }
-    }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -1px;
+    left: -15px;
+    width: 1rem;
+    height: 1rem;
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(0);
+  }
+
 }
 
 %nio-checkbox__label--checked {
-    @extend %nio-checkbox__label;
-
-    &:hover {
-        &::before {
-            box-shadow: 0 0 0 2px $palette-primary;
-        }
-    }
-
+  @extend %nio-checkbox__label;
+  &:hover {
     &::before {
-        box-shadow: 0 0 0 2px $palette-primary;
+      box-shadow: 0 0 0 2px $palette-primary;
     }
+  }
 
-    &::after {
-        animation: $checkbox-animation 500ms forwards;
-    }
+  &::before {
+    box-shadow: 0 0 0 2px $palette-primary;
+  }
+
+  &::after {
+    animation: $checkbox-animation 300ms forwards ease-out;
+    background-color: $palette-primary;
+  }
+
 }
-@keyframes #{$checkbox-animation} {
-    0% {
-        width: 1rem;
-        height: 1rem;
-        opacity: 0;
-        border: 1px solid $palette-primary;
-        background-image: none;
-        background-color: $palette-primary;
-        background-repeat: no-repeat;
-        background-position: center center;
-        transform: scale(0);
-        transform-origin: center center;
-    }
 
-    30% {
-        transform: scale(0.5);
-    }
+%nio-checkbox__label--disabled {
+  @extend %nio-checkbox__label;
+  color: $palette-light;
 
-    60% {
-        opacity: 0.6;
-        transform: scale(2.0);
+  &:hover {
+    &::before {
+      box-shadow: 0 0 0 1px $palette-light;
     }
+  }
 
-    65% {
-        opacity: 0;
-        background-image: none;
-        transform: scale(2.5);
-    }
+  &::before {
+    box-shadow: 0 0 0 1px $palette-light;
+  }
 
-    66% {
-        opacity: 0;
-        background-image: $icon;
-        transform: scale(0.6);
-    }
+  &::after {
+    animation: none;
+    background-color: transparent;
+  }
+}
 
-    100% {
-        opacity: 1;
-        border: none;
-        background-image: $icon;
-        background-color: $palette-primary;
-        background-size: 100%;
-        transform: scale(1);
-    }
+%nio-checkbox__label--disabled-checked {
+  &::after {
+    @include fill();
+    background-color: $palette-light;
+  }
 }

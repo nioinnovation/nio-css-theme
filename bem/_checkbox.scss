@@ -6,4 +6,6 @@
   &__input { @extend %nio-checkbox__input; }
   &__label { @extend %nio-checkbox__label; }
   &__label--checked { @extend %nio-checkbox__label--checked; }
+  &__label--disabled { @extend %nio-checkbox__label--disabled; }
+  &__label--checked &__label--disabled { @extend %nio-checkbox__label--disabled-checked; }
 }
