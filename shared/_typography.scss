@@ -17,6 +17,7 @@ $font-size-tiny:     1rem * ($font-ratio / $font-ratio / $font-ratio / $font-rat
 $font-size-small:    1rem * ($font-ratio / $font-ratio / $font-ratio) !default;
 $font-size-medium:   1rem * ($font-ratio / $font-ratio) !default;
 $font-size-large:    1rem * ($font-ratio) !default;
+$font-size-big:      1rem * ($font-ratio * $font-ratio) !default;
 $font-size-huge:     1rem * ($font-ratio * $font-ratio * $font-ratio) !default;
 $font-size-gigantic: 1rem * ($font-ratio * $font-ratio * $font-ratio * $font-ratio) !default;
 
