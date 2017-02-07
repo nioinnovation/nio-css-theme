@@ -7,5 +7,7 @@
   &__label { @extend %nio-checkbox__label; }
   &__label--checked { @extend %nio-checkbox__label--checked; }
   &__label--disabled { @extend %nio-checkbox__label--disabled; }
-  &__label--checked &__label--disabled { @extend %nio-checkbox__label--disabled-checked; }
+  &__label--disabled &__label--checked { @extend %nio-checkbox__label--disabled-checked; }
+  &__label--unknown { @extend %nio-checkbox__label--unknown; }
+  &__label--disabled &__label--unknown { @extend %nio-checkbox__label--disabled-unknown; }
 }

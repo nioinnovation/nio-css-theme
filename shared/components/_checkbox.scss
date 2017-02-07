@@ -1,8 +1,8 @@
 $icon-check: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2hlY2siIGNsYXNzPSJtYXJrIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNSAtMjUgNTAgNTAiIHdpZHRoPSI1MCI+CiAgPHBhdGggY2xhc3M9ImNoZWNrbWFya19fY2hlY2siIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iNnB4IiBkPSJNLTE1IDAgLTQgMTAgMTIgLTkiLz4KPC9zdmc+');
 
-$icon-indeterminate: '-';
+$icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0yNSAtMjUgNTAgNTAiIHdpZHRoPSI1MCI+CiAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSI2cHgiIGQ9Ik0gLTE1IDAgMTUgMCIvPgo8L3N2Zz4=');
 
-// these need to be mixins because placeholders can't be used in keyframes
+// these are mixins because placeholders can't be used in keyframes
 @mixin empty() {
   width: 1rem;
   height: 1rem;
@@ -20,21 +20,25 @@ $icon-indeterminate: '-';
   transform: scale(1);
 }
 
-$checkbox-animation: unique-id();
+@mixin animate-fill($icon) {
 
-@keyframes #{$checkbox-animation} {
-  0% { @include empty(); }
-  60% {
-    opacity: 0.3;
-    transform: scale(2.0);
+  $checkbox-animation: unique-id();
+  animation: $checkbox-animation 300ms forwards ease-out;
+
+  @keyframes #{$checkbox-animation} {
+    0% { @include empty(); }
+    60% {
+      opacity: 0.3;
+      transform: scale(2.0);
+    }
+    100% { @include fill($icon); }
   }
-  100% { @include fill(); }
+
 }
 
 %nio-checkbox {
   display: inline-block;
   margin-right: 0.75rem;
-  cursor: pointer;
 }
 
 %nio-checkbox__input {
@@ -86,6 +90,7 @@ $checkbox-animation: unique-id();
 
 %nio-checkbox__label--checked {
   @extend %nio-checkbox__label;
+
   &:hover {
     &::before {
       box-shadow: 0 0 0 2px $palette-primary;
@@ -97,10 +102,21 @@ $checkbox-animation: unique-id();
   }
 
   &::after {
-    animation: $checkbox-animation 300ms forwards ease-out;
+    @include animate-fill($icon-check);
     background-color: $palette-primary;
+    cursor: pointer;
   }
 
+}
+
+%nio-checkbox__label--unknown {
+  @extend %nio-checkbox__label--checked;
+
+  &::after {
+    @include animate-fill($icon-dash);
+    background-color: $palette-primary;
+    cursor: pointer;
+  }
 }
 
 %nio-checkbox__label--disabled {
@@ -115,17 +131,26 @@ $checkbox-animation: unique-id();
 
   &::before {
     box-shadow: 0 0 0 1px $palette-light;
+    cursor: not-allowed;
   }
 
   &::after {
     animation: none;
     background-color: transparent;
+    cursor: not-allowed;
   }
 }
 
 %nio-checkbox__label--disabled-checked {
   &::after {
-    @include fill();
+    @include fill($icon-check);
+    background-color: $palette-light;
+  }
+}
+
+%nio-checkbox__label--disabled-unknown {
+  &::after {
+    @include fill($icon-dash);
     background-color: $palette-light;
   }
 }
