@@ -3,6 +3,6 @@
 
 .list { @extend %nio-list; }
 
-.numbered { @extend %nio-list--icon; }
-.sortable { @extend %nio-list--icon; }
-.movable { @extend %nio-list--icon; }
+.numbered { @extend %nio-list--numbered; }
+.sortable { @extend %nio-list--sortable; }
+.movable { @extend %nio-list--movable; }

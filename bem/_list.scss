@@ -1,0 +1,9 @@
+@import "shared/components/list";
+
+.#{$prefix}list {
+  @extend %nio-list;
+
+  &--numbered { @extend %nio-list--numbered; }
+  &--sortable { @extend %nio-list--sortable; }
+  &--movable { @extend %nio-list--movable; }
+}
