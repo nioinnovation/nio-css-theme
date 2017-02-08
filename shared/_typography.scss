@@ -11,7 +11,7 @@ $font-line-height-loose: 2 !default;
 
 $font-size-root: 12pt !default;
 
-$font-ratio:         $maj2 !default;
+$font-ratio:         $min3 !default;
 $font-size-micro:    1rem * ($font-ratio / $font-ratio / $font-ratio / $font-ratio / $font-ratio) !default;
 $font-size-tiny:     1rem * ($font-ratio / $font-ratio / $font-ratio / $font-ratio) !default;
 $font-size-small:    1rem * ($font-ratio / $font-ratio / $font-ratio) !default;
