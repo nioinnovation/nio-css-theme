@@ -4,9 +4,9 @@
 .checkbox { @extend %nio-checkbox; }
 
 .input { @extend %nio-checkbox__input; }
-.label { @extend %nio-checkbox__label; }
+.unchecked { @extend %nio-checkbox__label; }
 .checked { @extend %nio-checkbox__label--checked; }
+.mixed { @extend %nio-checkbox__label--mixed; }
 .disabled { @extend %nio-checkbox__label--disabled; }
-.unknown { @extend %nio-checkbox__label--unknown; }
 .checked.disabled { @extend %nio-checkbox__label--disabled-checked; }
-.unknown.disabled { @extend %nio-checkbox__label--disabled-unknown; }
+.mixed.disabled { @extend %nio-checkbox__label--disabled-mixed; }

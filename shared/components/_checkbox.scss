@@ -109,7 +109,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
 
 }
 
-%nio-checkbox__label--unknown {
+%nio-checkbox__label--mixed {
   @extend %nio-checkbox__label--checked;
 
   &::after {
@@ -148,7 +148,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
   }
 }
 
-%nio-checkbox__label--disabled-unknown {
+%nio-checkbox__label--disabled-mixed {
   &::after {
     @include fill($icon-dash);
     background-color: $palette-light;
