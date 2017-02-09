@@ -4,6 +4,7 @@
 .checkbox { @extend %nio-checkbox; }
 
 .input { @extend %nio-checkbox__input; }
+.label { @extend %nio-checkbox__label; }
 .unchecked > .label { @extend %nio-checkbox__label; }
 .checked > .label { @extend %nio-checkbox__label--checked; }
 .mixed > .label { @extend %nio-checkbox__label--mixed; }
