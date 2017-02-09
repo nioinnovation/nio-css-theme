@@ -30,6 +30,15 @@ $top-padding: 1.25rem;
   font: inherit;
 }
 
+%nio-text-input--multiline {
+  @extend %nio-text-input--common;
+  height: 1rem * 2.5 * 2; // twice singleline height, change to distance variable
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0.5rem;
+  font: inherit;
+}
+
 %nio-text-input__label {
   display: block;
   position: absolute;
