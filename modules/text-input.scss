@@ -2,6 +2,7 @@
 @import "shared/components/text-input";
 
 .textInput { @extend %nio-text-input; }
+.small { @extend %nio-text-input--small; }
 .singleline { @extend %nio-text-input--singleline; }
 .multiline { @extend %nio-text-input--multiline; }
 .inline { @extend %nio-text-input--inline; }

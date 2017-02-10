@@ -9,6 +9,11 @@ $button-width: 8rem;
   padding-top: $top-padding;
 }
 
+%nio-text-input--small {
+  @extend %nio-text-input;
+  display: inline-block;
+}
+
 %nio-text-input--common {
   height: 1rem * 2.5;
   border-radius: 10px;
