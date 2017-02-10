@@ -20,6 +20,15 @@ $font-size-large:    1rem * ($font-ratio) !default;
 $font-size-huge:     1rem * ($font-ratio * $font-ratio * $font-ratio) !default;
 $font-size-gigantic: 1rem * ($font-ratio * $font-ratio * $font-ratio * $font-ratio) !default;
 
+$font-spacing-vertical-root: 1rem !default;
+$font-spacing-horizontal-root: 1.5rem !default;
+
+$font-spacing-small: (1rem * (font-spacing-vertical-root / font-spacing-vertical-root / font-spacing-vertical-root)) (1rem * ($font-spacing-horizontal-root / $font-spacing-horizontal-root / $font-spacing-horizontal-root) !default;
+$font-spacing-medium: (1rem * (font-spacing-vertical-root / font-spacing-vertical-root)) (1rem * ($font-spacing-horizontal-root / $font-spacing-horizontal-root)) !default;
+$font-spacing-large: (1rem * (font-spacing-vertical-root)) (1rem * ($font-spacing-horizontal-root)) !default;
+$font-spacing-huge: (1rem * (font-spacing-vertical-root * font-spacing-vertical-root)) (1rem * ($font-spacing-horizontal-root * $font-spacing-horizontal-root)) !default;
+$font-spacing-gigantic: (1rem * (font-spacing-vertical-root * font-spacing-vertical-root * font-spacing-vertical-root)) (1rem * ($font-spacing-horizontal-root * $font-spacing-horizontal-root * $font-spacing-horizontal-root)) !default;
+
 $font-sans: normal $font-weight-sans #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
 $font-heading: normal $font-weight-heading #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
 $font-mono: normal $font-weight-mono #{$font-size-small} / #{$font-line-height-loose} $font-family-mono !default;
