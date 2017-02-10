@@ -97,28 +97,29 @@
 
 %nio-button--huge {
   font-size: $font-size-huge;
-  padding: .6rem;
-  min-height: 2.75rem;
-  min-width: 10rem;
+  padding: $dist-large $dist-gigantic;
+  min-height: $dist-gigantic;
+  min-width: $dist-gigantic;
+  border-radius: $dist-gigantic;
 }
 
 %nio-button--large {
   font-size: $font-size-large;
-  padding: .4rem;
-  min-height: 2.25rem;
-  min-width: 8.5rem;
+  padding: $dist-large $dist-gigantic;
+  min-height: $dist-large;
+  min-width: $dist-large;
 }
 
 %nio-button--small {
   font-size: $font-size-small;
-  padding: .2rem;
-  min-height: 1.75rem;
-  min-width: 5.5rem;
+  padding: $dist-small $dist-medium;
+  min-height: $dist-small;
+  min-width: $dist-normal;
 }
 
 %nio-button--tiny {
   font-size: $font-size-tiny;
-  padding: .2rem;
-  min-height: 1.2rem;
-  min-width: 5rem;
+  padding: $dist-tiny $dist-normal;
+  min-height: $dist-normal;
+  min-width: $dist-medium;
 }
