@@ -5,6 +5,7 @@
 
   &--singleline { @extend %nio-text-input--singleline; }
   &--multiline { @extend %nio-text-input--multiline; }
+  &--inline { @extend %nio-text-input--inline; }
   &__label { @extend %nio-text-input__label; }
   &__label--with-focus { @extend %nio-text-input__label--with-focus; }
   &__label--with-value { @extend %nio-text-input__label--with-value; }

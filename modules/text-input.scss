@@ -4,6 +4,7 @@
 .textInput { @extend %nio-text-input; }
 .singleline { @extend %nio-text-input--singleline; }
 .multiline { @extend %nio-text-input--multiline; }
+.inline { @extend %nio-text-input--inline; }
 .label { @extend %nio-text-input__label; }
 .labelWithFocus { @extend %nio-text-input__label--with-focus; }
 .labelWithValue { @extend %nio-text-input__label--with-value; }
