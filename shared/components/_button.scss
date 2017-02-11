@@ -37,25 +37,26 @@
   @include nio-button--colorize($palette-light, $palette-black);
   border-width: 1px;
   border-style: solid;
-  padding: 0.25rem 1rem;
-  min-width: 10rem;
-  min-height: 2.5rem;
-  border-radius: 2rem;
+  padding: 0.25em 1em;
+  min-width: 10em;
+  min-height: 2.5em;
+  border-radius: 2em;
   font: inherit;
   line-height: 1;
-  box-shadow: 0 0.5rem 1rem -0.5em $palette-shadow;
+  box-shadow: 0 0.5em 1em -0.5em $palette-shadow;
   box-sizing: border-box;
   outline: 0;
   cursor: pointer;
-  background-image: radial-gradient(circle 7.5rem at 50% 20%, rgba(white, 0.125), rgba(white, 0));
-  margin: 0.5rem;
+  background-image: radial-gradient(circle 7.5em at 50% 20%, rgba(white, 0.125), rgba(white, 0));
+  margin: 0.5em;
+  vertical-align: middle;
 }
 
 %nio-button--link {
   text-decoration: none;
   display: inline-block;
   text-align: center;
-  line-height: 1.9rem;
+  line-height: 1.9em;
 }
 
 %nio-button--disabled {
@@ -96,30 +97,17 @@
 }
 
 %nio-button--huge {
-  font-size: $font-size-huge;
-  padding: $dist-large $dist-gigantic;
-  min-height: $dist-gigantic;
-  min-width: $dist-gigantic;
-  border-radius: $dist-gigantic;
+  font-size: $font-size-big;
 }
 
 %nio-button--large {
   font-size: $font-size-large;
-  padding: $dist-large $dist-gigantic;
-  min-height: $dist-large;
-  min-width: $dist-large;
 }
 
 %nio-button--small {
   font-size: $font-size-small;
-  padding: $dist-small $dist-medium;
-  min-height: $dist-small;
-  min-width: $dist-normal;
 }
 
 %nio-button--tiny {
   font-size: $font-size-tiny;
-  padding: $dist-tiny $dist-normal;
-  min-height: $dist-normal;
-  min-width: $dist-medium;
 }
