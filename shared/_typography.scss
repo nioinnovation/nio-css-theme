@@ -20,22 +20,6 @@ $font-size-large:    1rem * ($font-ratio) !default;
 $font-size-huge:     1rem * ($font-ratio * $font-ratio * $font-ratio) !default;
 $font-size-gigantic: 1rem * ($font-ratio * $font-ratio * $font-ratio * $font-ratio) !default;
 
-// widths
-$dist-base: $font-size-root / ($font-size-root * 0 + 1) !default;
-
-$dist-hair:    1rem * (1/$dist-base)  !default;
-$dist-thin:    1rem * (2/$dist-base)  !default;
-$dist-tiny:    1rem * (3/$dist-base)  !default;
-$dist-x-small: 1rem * (4/$dist-base)  !default;
-$dist-small:   1rem * (6/$dist-base)  !default;
-$dist-normal:  1rem * (8/$dist-base)  !default;
-$dist-medium:  1rem * (12/$dist-base) !default;
-$dist-large:   1rem !default;
-$dist-huge:    2rem !default;
-$dist-gigantic: 3rem !default;
-
-$dist-line-height-calculated: $font-line-height * 1rem;
-
 $font-sans: normal $font-weight-sans #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
 $font-heading: normal $font-weight-heading #{$font-size-root} / #{$font-line-height} $font-family-sans !default;
 $font-mono: normal $font-weight-mono #{$font-size-small} / #{$font-line-height-loose} $font-family-mono !default;
