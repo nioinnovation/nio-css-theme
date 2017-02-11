@@ -1,17 +1,11 @@
 $timing: 120ms;
 $top-padding: 1.25rem;
-$button-width: 8rem;
 
 %nio-text-input {
   display: block;
   position: relative;
   padding: 0.25rem;
   padding-top: $top-padding;
-}
-
-%nio-text-input--small {
-  @extend %nio-text-input;
-  display: inline-block;
 }
 
 %nio-text-input--common {
@@ -40,12 +34,6 @@ $button-width: 8rem;
   @extend %nio-text-input--common;
   height: 1rem * 2.5 * 2; // twice singleline height, TODO: change this and others to distance variable
   width: 100%;
-}
-
-%nio-text-input--inline {
-  @extend %nio-text-input--common;
-  border-radius: 20px;
-  width: $button-width;
 }
 
 %nio-text-input__label {
