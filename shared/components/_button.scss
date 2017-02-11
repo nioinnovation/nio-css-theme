@@ -65,6 +65,7 @@
   background-color: rgba($palette-light, 0.1);
   color: $palette-light;
   box-shadow: none;
+  cursor: not-allowed;
   &:focus,
   &:hover {
     background-color: rgba($palette-light, 0.1);
