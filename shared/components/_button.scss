@@ -35,6 +35,7 @@
 
 %nio-button {
   @include nio-button--colorize($palette-light, $palette-black);
+  font-size: $font-size-medium;
   border-width: 1px;
   border-style: solid;
   padding: 0.25em 1em;
@@ -49,7 +50,6 @@
   cursor: pointer;
   background-image: radial-gradient(circle 7.5em at 50% 20%, rgba(white, 0.125), rgba(white, 0));
   margin: 0.5em;
-  vertical-align: middle;
 }
 
 %nio-button--link {
