@@ -1,11 +1,45 @@
+$icon-circle: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2lyY2xlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01IC01IDEwIDEwIiB3aWR0aD0iMTQiPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSI0Ii8+Cjwvc3ZnPg==');
+
+
 // Base
 %nio-list {
+  position: relative;
   display:block;
+  margin-left: 18px;
+  list-style-type: none;
+  li {
+    &:before {
+      content: $icon-circle;
+      left: -9px;
+      position: absolute;
+      color: $palette-dark;
+    }
+  }
 }
 
 // Variants
 %nio-list--numbered {
-  display:block;
+  @extend %nio-list;
+  counter-reset: list-counter;
+  li {
+    &:before {
+      font-size: $font-size-large;
+      content: counter(list-counter);
+      counter-increment: list-counter;
+    }
+  }
+}
+
+%nio-list--none {
+  @extend %nio-list;
+  margin-left: -40px;
+  li {
+    &:before {
+      content: '';
+      left: 0;
+      position: absolute;
+    }
+  }
 }
 
 %nio-list--sortable {
