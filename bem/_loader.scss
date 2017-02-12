@@ -1,0 +1,22 @@
+@import "shared/components/loader";
+
+@import "shared/core";
+@import 'shared/components/loader';
+
+.#{$prefix}loader {
+  @extend %nio-loader;
+
+  &__result { @extend %nio-loader__result; }
+  &__result--affirmative { @extend %nio-loader__result--affirmative; }
+  &__result--warning { @extend %nio-loader__result--warning; }
+  &__result--danger { @extend %nio-loader__result--danger; }
+  &__result--is-complete { @extend %nio-loader__result--is-complete; }
+
+  &__result-icon { @extend %nio-loader__result-icon; }
+  &__result-message { @extend %nio-loader__result-message; }
+
+  &__decoration { @extend %nio-loader__decoration; }
+  &__decoration--outer { @extend %nio-loader__decoration, %nio-loader__decoration--outer; }
+  &__decoration--middle { @extend %nio-loader__decoration, %nio-loader__decoration--middle; }
+  &__decoration--inner { @extend %nio-loader__decoration, %nio-loader__decoration--inner; }
+}

@@ -3,5 +3,5 @@
 
 .link { @extend %nio-link; }
 
-.icon { @extend %nio-link--icon; }
-.count { @extend %nio-link--count; }
+.before { @extend %nio-link--before; }
+.after { @extend %nio-link--after; }
