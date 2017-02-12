@@ -5,5 +5,10 @@
 
   &__input { @extend %nio-checkbox__input; }
   &__label { @extend %nio-checkbox__label; }
+  &__label--unchecked { @extend %nio-checkbox__label; }
   &__label--checked { @extend %nio-checkbox__label--checked; }
+  &__label--disabled { @extend %nio-checkbox__label--disabled; }
+  &__label--mixed { @extend %nio-checkbox__label--mixed; }
+  &__label--disabled-checked { @extend %nio-checkbox__label--disabled-checked; }
+  &__label--disabled-mixed { @extend %nio-checkbox__label--disabled-mixed; }
 }
