@@ -15,7 +15,11 @@
   display:inline-block;
   &:before {
     content: attr(data-icon);
-    margin-right: 0.25rem;
+    display: inline-block;
+    width: 1.5rem;
+    text-align: right;
+    margin-right: 0.4rem;
+    font-size: $font-size-large;
   }
 }
 
@@ -25,6 +29,7 @@
   position:relative;
   &:after {
     content: attr(data-icon);
-    margin-left: 0.25rem;
+    font-size: $font-size-large;
+    margin-left: 0.4rem;
   }
 }
