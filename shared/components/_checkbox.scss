@@ -39,6 +39,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
 %nio-checkbox {
   display: inline-block;
   margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 %nio-checkbox__input {
@@ -53,11 +54,6 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
   color: $palette-black;
   font-size: $font-size-small;
 
-  &:hover {
-    &::before {
-      box-shadow: 0 0 0 1px $palette-primary;
-    }
-  }
 
   &::before {
     content: '';
@@ -71,6 +67,12 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
     border-radius: 50%;
     box-shadow: 0 0 0 1px $palette-dark;
     cursor: pointer;
+  }
+
+  &:hover {
+    &::before {
+      box-shadow: 0 0 0 1px $palette-primary;
+    }
   }
 
   &::after {

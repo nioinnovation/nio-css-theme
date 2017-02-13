@@ -1,0 +1,9 @@
+@import "shared/core";
+@import "shared/components/list";
+
+.list { @extend %nio-list; }
+
+.numbered { @extend %nio-list--numbered; }
+.none { @extend %nio-list--none; }
+.sortable { @extend %nio-list--sortable; }
+.movable { @extend %nio-list--movable; }
