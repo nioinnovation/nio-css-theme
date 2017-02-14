@@ -2,24 +2,55 @@
 %nio-twofold {
   display:block;
   color: $palette-black;
+  margin-right: 5%;
+}
+
+%nio-twofold__header {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $palette-light;
+  padding: #{$font-line-height}rem 0 #{$font-line-height / 2}rem 0; 
 }
 
 %nio-twofold__heading {
-  display:block;
+  font-size: $font-size-medium;
+  text-align: left;
+  width: 20%;
 }
 
 %nio-twofold__subheading {
-  display:block;
+  font-weight: 300;
+  font-size: $font-size-medium;
+  text-align: left;
+  width: 30%;
+  color: $palette-mid;
 }
 
 %nio-twofold__icon {
-  display:block;
+  font-size: $font-size-titanic;
+  font-style: normal;
+  display: block;
+  fill: $palette-primary;
+  stroke: $palette-white;
+  stroke-width: 1.5;
+}
+
+%nio-twofold__icon--active {
+  @extend %nio-twofold__icon;
+  transform: rotate(180deg);
 }
 
 %nio-twofold__detail {
-  display:block;
+  display: none;
+  text-align: left;
 }
 
 %nio-twofold__detail--active {
-  display:block;
+  padding-top: 1rem;
+  font-weight: 300;
+  font-size: $font-size-tiny;
+  display: block;
+  line-height: $font-line-height-loose;
 }
