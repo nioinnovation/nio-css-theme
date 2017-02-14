@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.1.0] - 2017-02-14
+
+### Added
+- Multiline support for text-input
+- Link
+- List
+- Size support for Button
+
+
 ## [2.0.5] - 2017-02-08
 ### Changed
 - Adjusted the typographical ratio to a Minor 3rd.
@@ -37,7 +46,8 @@
 
 `nio-css-theme` follows [semantic versioning](http://semver.org/)
 
-[Unreleased]: https://github.com/nioinnovation/react-nuik/compare/v2.0.5...HEAD
+[Unreleased]: https://github.com/nioinnovation/react-nuik/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/nioinnovation/react-nuik/compare/v2.0.5...v2.1.0
 [2.0.5]: https://github.com/nioinnovation/react-nuik/compare/v2.0.4...v2.0.5
 [2.0.4]: https://github.com/nioinnovation/react-nuik/compare/v2.0.3...v2.0.4
 [2.0.3]: https://github.com/nioinnovation/react-nuik/compare/v2.0.2...v2.0.3
