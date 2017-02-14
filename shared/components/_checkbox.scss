@@ -40,6 +40,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
   display: inline-block;
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
+  color: $palette-black;
 }
 
 %nio-checkbox__input {
@@ -51,9 +52,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
   position: relative;
   margin-left: 1.5rem;
   padding-left: 0.4rem;
-  color: $palette-black;
   font-size: $font-size-small;
-
 
   &::before {
     content: '';

@@ -2,6 +2,9 @@
 
 .#{$prefix}twofold {
   @extend %nio-twofold;
+  &__heading { @extend %nio-twofold__heading; }
+  &__subheading { @extend %nio-twofold__subheading; }
+  &__icon { @extend %nio-twofold__icon; }
   &__detail { @extend %nio-twofold__detail; }
   &__detail--active { @extend %nio-twofold__detail--active; }
 }

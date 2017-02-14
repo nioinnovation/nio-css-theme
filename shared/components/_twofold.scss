@@ -1,6 +1,19 @@
 // Base
 %nio-twofold {
   display:block;
+  color: $palette-black;
+}
+
+%nio-twofold__heading {
+  display:block;
+}
+
+%nio-twofold__subheading {
+  display:block;
+}
+
+%nio-twofold__icon {
+  display:block;
 }
 
 %nio-twofold__detail {
