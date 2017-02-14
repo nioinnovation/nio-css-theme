@@ -2,8 +2,7 @@
 
 .#{$prefix}list {
   @extend %nio-list;
-
-  &--numbered { @extend %nio-list--numbered; }
-  &--sortable { @extend %nio-list--sortable; }
-  &--movable { @extend %nio-list--movable; }
+  &__listItem { @extend %nio-list__listItem; }
+  &__listItem--numbered { @extend %nio-list__listItem--numbered; }
+  &__listItem--none { @extend %nio-list__listItem--none; }
 }
