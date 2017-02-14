@@ -1,0 +1,4 @@
+@import "shared/core";
+@import "shared/components/twofold";
+
+.twofold { @extend %nio-twofold; }

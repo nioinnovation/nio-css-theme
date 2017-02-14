@@ -1,0 +1,5 @@
+@import "shared/components/twofold";
+
+.#{$prefix}twofold {
+  @extend %nio-twofold;
+}
