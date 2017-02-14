@@ -2,3 +2,5 @@
 @import "shared/components/twofold";
 
 .twofold { @extend %nio-twofold; }
+.detail { @extend %nio-twofold__detail; }
+.active { @extend %nio-twofold__detail--active; }

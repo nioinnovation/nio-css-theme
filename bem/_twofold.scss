@@ -2,4 +2,6 @@
 
 .#{$prefix}twofold {
   @extend %nio-twofold;
+  &__detail { @extend %nio-twofold__detail; }
+  &__detail--active { @extend %nio-twofold__detail--active; }
 }
