@@ -46,12 +46,12 @@
 
 `nio-css-theme` follows [semantic versioning](http://semver.org/)
 
-[Unreleased]: https://github.com/nioinnovation/react-nuik/compare/v2.1.0...HEAD
-[2.1.0]: https://github.com/nioinnovation/react-nuik/compare/v2.0.5...v2.1.0
-[2.0.5]: https://github.com/nioinnovation/react-nuik/compare/v2.0.4...v2.0.5
-[2.0.4]: https://github.com/nioinnovation/react-nuik/compare/v2.0.3...v2.0.4
-[2.0.3]: https://github.com/nioinnovation/react-nuik/compare/v2.0.2...v2.0.3
-[2.0.2]: https://github.com/nioinnovation/react-nuik/compare/v2.0.1...v2.0.2
-[2.0.1]: https://github.com/nioinnovation/react-nuik/compare/646c1b0...v2.0.1
+[Unreleased]: https://github.com/nioinnovation/nio-css-theme/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.5...v2.1.0
+[2.0.5]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.4...v2.0.5
+[2.0.4]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.3...v2.0.4
+[2.0.3]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.2...v2.0.3
+[2.0.2]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.1...v2.0.2
+[2.0.1]: https://github.com/nioinnovation/nio-css-theme/compare/646c1b0...v2.0.1
 
 
