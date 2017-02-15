@@ -5,7 +5,11 @@
 .header { @extend %nio-twofold__header; }
 .heading { @extend %nio-twofold__heading; }
 .subheading { @extend %nio-twofold__subheading; }
-.closedIcon { @extend %nio-twofold__icon; }
-.openIcon { @extend %nio-twofold__icon--active; }
+.icon { @extend %nio-twofold__icon; }
+.iconOpen { @extend %nio-twofold__icon--active; }
+.iconClosed { }
 .detail { @extend %nio-twofold__detail; }
 .active { @extend %nio-twofold__detail--active; }
+
+.twofold:hover .header { @extend %nio-twofold__header--hover; }
+.twofold:hover .iconClosed { @extend %nio-twofold__icon--hover; }
