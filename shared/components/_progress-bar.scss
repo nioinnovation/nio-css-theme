@@ -1,10 +1,10 @@
 // Base
 
 %nio-progress-bar {
-  background-color: $palette-light;
-  border-radius: 3px;
+  background-image: linear-gradient($palette-light, darken($palette-white, 2%));
+  border-radius: 20px;
   display: block;
-  height: 6px;
+  height: 0.5rem;
   background-clip: padding-box;
   margin: 0.5rem 0 1rem 0;
   overflow: hidden;
@@ -12,13 +12,16 @@
   width: 100%;
 }
 
-%nio-progress-bar--disabled {
-  display: block;
-}
-
 %nio-progress-bar__fill {
   height: 100%;
-  border-radius: 3px;}
+  border-radius: 20px;
+  background-color: $palette-black ;
+}
+
+%nio-progress-bar--disabled {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-shadow;
+}
 
 // Variants
 %nio-progress-bar--primary {

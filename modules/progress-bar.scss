@@ -1,7 +1,7 @@
 @import "shared/core";
 @import "shared/components/progress-bar";
 
-.progress-bar { @extend %nio-progress-bar; }
+.progress { @extend %nio-progress-bar; }
 .fill { @extend %nio-progress-bar__fill; }
 
 .primary { @extend %nio-progress-bar--primary; }
