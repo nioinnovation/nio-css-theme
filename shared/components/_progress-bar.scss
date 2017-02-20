@@ -18,32 +18,32 @@
 }
 
 // Variants
-%nio-progress-bar--primary {
+%nio-progress-bar__fill--primary {
   @extend %nio-progress-bar__fill;
   background-color: $palette-primary;
 }
 
-%nio-progress-bar--alternate {
+%nio-progress-bar__fill--alternate {
   @extend %nio-progress-bar__fill;
   background-color: $palette-alternate;
 }
 
-%nio-progress-bar--affirmative {
+%nio-progress-bar__fill--affirmative {
   @extend %nio-progress-bar__fill;
   background-color: $palette-affirmative;
 }
 
-%nio-progress-bar--warning {
+%nio-progress-bar__fill--warning {
   @extend %nio-progress-bar__fill;
   background-color: $palette-warning;
 }
 
-%nio-progress-bar--danger {
+%nio-progress-bar__fill--danger {
   @extend %nio-progress-bar__fill;
   background-color: $palette-danger;
 }
 
-%nio-progress-bar--disabled {
+%nio-progress-bar__fill--disabled {
   @extend %nio-progress-bar__fill;
   background-color: $palette-shadow;
 }
