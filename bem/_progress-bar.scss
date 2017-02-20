@@ -1,0 +1,13 @@
+@import "shared/components/progress-bar";
+
+.#{$prefix}progress-bar {
+  @extend %nio-progress-bar;
+
+  &__fill { @extend %nio-progress-bar__fill; }
+  &__fill--primary { @extend %nio-progress-bar__fill--primary; }
+  &__fill--alternate { @extend %nio-progress-bar__fill--alternate; }
+  &__fill--affirmative { @extend %nio-progress-bar__fill--affirmative; }
+  &__fill--warning { @extend %nio-progress-bar__fill--warning; }
+  &__fill--danger { @extend %nio-progress-bar__fill--danger; }
+  &__fill--disabled { @extend %nio-progress-bar__fill--disabled; }
+}

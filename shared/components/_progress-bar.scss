@@ -1,0 +1,49 @@
+// Base
+%nio-progress-bar {
+  background-image: linear-gradient($palette-light, darken($palette-white, 2%));
+  border-radius: 20px;
+  display: block;
+  height: 0.5rem;
+  background-clip: padding-box;
+  margin: 0.5rem 0 1rem 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+%nio-progress-bar__fill {
+  height: 100%;
+  border-radius: 20px;
+  background-color: $palette-black ;
+}
+
+// Variants
+%nio-progress-bar__fill--primary {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-primary;
+}
+
+%nio-progress-bar__fill--alternate {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-alternate;
+}
+
+%nio-progress-bar__fill--affirmative {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-affirmative;
+}
+
+%nio-progress-bar__fill--warning {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-warning;
+}
+
+%nio-progress-bar__fill--danger {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-danger;
+}
+
+%nio-progress-bar__fill--disabled {
+  @extend %nio-progress-bar__fill;
+  background-color: $palette-shadow;
+}
