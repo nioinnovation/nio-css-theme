@@ -9,6 +9,7 @@ $top-padding: 1.25rem;
 }
 
 %nio-text-input--common {
+  color: $palette-black;
   height: 1rem * 2.5;
   border-radius: 10px;
   border: 1px solid $palette-light;
@@ -62,6 +63,7 @@ $top-padding: 1.25rem;
 }
 
 %nio-text-input__helper {
+  color: $palette-black;
   display: block;
   font-size: $font-size-small;
   text-align: right;

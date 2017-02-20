@@ -1,0 +1,79 @@
+// Base
+%nio-twofold {
+  display:block;
+  color: $palette-black;
+  cursor: pointer;
+}
+
+%nio-twofold__header {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding-bottom: 1rem;
+  &:focus {
+    outline: none;
+  }
+}
+
+%nio-twofold__header--hover {
+  color: $palette-primary;
+}
+
+
+%nio-twofold__heading {
+  font-size: $font-size-medium;
+  text-align: left;
+  flex: 1;
+  margin-right: 20px;
+}
+
+%nio-twofold__subheading {
+  font-weight: 300;
+  font-size: $font-size-medium;
+  text-align: left;
+  flex: 2;
+  color: $palette-mid;
+  margin-right: 20px;
+}
+
+%nio-twofold__icon {
+  height: 30px;
+  display: block;
+  stroke-width: 1.5;
+  fill: none;
+  stroke: $palette-black;
+  cursor: pointer;
+  transition: transform .5s;
+}
+
+%nio-twofold__icon--hover{
+  fill: $palette-primary;
+  stroke: $palette-white;
+}
+
+%nio-twofold__icon--active {
+  transform: rotate(-180deg);
+  fill: $palette-primary;
+  stroke: $palette-white;
+}
+
+%nio-twofold__detail {
+  font-weight: 300;
+  font-size: $font-size-small;
+  line-height: $font-line-height-loose;
+  max-height: 0;
+  overflow-y: hidden;
+  border-top: 1px solid rgba($palette-light, 0);
+  transition: max-height .5s ease-in-out, padding .5s ease-in-out, border-top .5s;
+}
+
+%nio-twofold__detail--active {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 300;
+  font-size: $font-size-small;
+  line-height: $font-line-height-loose;
+  max-height: 500px;
+  overflow-y: scroll;
+  border-top: 1px solid $palette-light;
+}

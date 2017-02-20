@@ -5,47 +5,35 @@ $icon-circle: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2lyY2xlIiB4bWxucz0iaH
 %nio-list {
   position: relative;
   display:block;
+  color: $palette-black;
   margin-left: 18px;
   list-style-type: none;
-  li {
-    &:before {
-      content: $icon-circle;
-      left: -9px;
-      position: absolute;
-      color: $palette-dark;
-    }
+  counter-reset: list-counter;
+}
+
+%nio-list__listItem {
+  &:before {
+    content: $icon-circle;
+    left: -9px;
+    position: absolute;
+    color: $palette-dark;
   }
 }
 
 // Variants
-%nio-list--numbered {
-  @extend %nio-list;
-  counter-reset: list-counter;
-  li {
-    &:before {
-      font-size: $font-size-large;
-      content: counter(list-counter);
-      counter-increment: list-counter;
-    }
+%nio-list__listItem--numbered {
+  &:before {
+    font-size: $font-size-large;
+    content: counter(list-counter);
+    counter-increment: list-counter;
   }
 }
 
-%nio-list--none {
-  @extend %nio-list;
-  margin-left: -40px;
-  li {
-    &:before {
-      content: '';
-      left: 0;
-      position: absolute;
-    }
+%nio-list__listItem--none {
+  margin-left: -60px;
+  &:before {
+    content: '';
+    left: 0;
+    position: absolute;
   }
-}
-
-%nio-list--sortable {
-  display:block;
-}
-
-%nio-list--movable {
-  display:block;
 }

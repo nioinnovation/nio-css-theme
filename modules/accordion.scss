@@ -1,0 +1,4 @@
+@import "shared/core";
+@import "shared/components/accordion";
+
+.accordion { @extend %nio-accordion; }
