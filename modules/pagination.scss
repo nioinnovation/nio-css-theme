@@ -1,0 +1,10 @@
+@import "shared/core";
+@import "shared/components/pagination";
+
+.pagination { @extend %nio-pagination; }
+.icon { @extend %nio-pagination__icon; }
+.prev { @extend %nio-pagination__icon--prev; }
+.next { @extend %nio-pagination__icon--next; }
+
+.link { @extend %nio-pagination__link; }
+.active { @extend %nio-pagination__link--active; }

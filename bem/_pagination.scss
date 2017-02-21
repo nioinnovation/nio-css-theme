@@ -1,0 +1,11 @@
+@import "shared/components/pagination";
+
+.#{$prefix}pagination {
+  @extend %nio-pagination;
+
+  &__icon { @extend %nio-pagination__icon; }
+  &__icon--prev { @extend %nio-pagination__icon--prev; }
+  &__icon--next { @extend %nio-pagination__icon--next; }
+  &__link { @extend %nio-pagination__link; }
+  &__link-active { @extend %nio-pagination__link-active; }
+}
