@@ -6,6 +6,7 @@
   &__icon { @extend %nio-pagination__icon; }
   &__icon--prev { @extend %nio-pagination__icon--prev; }
   &__icon--next { @extend %nio-pagination__icon--next; }
+  &__icon--hidden { @extend %nio-pagination__icon--hidden; }
   &__link { @extend %nio-pagination__link; }
-  &__link-active { @extend %nio-pagination__link-active; }
+  &__link--active { @extend %nio-pagination__link--active; }
 }
