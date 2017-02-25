@@ -1,0 +1,51 @@
+// Base
+%nio-pagination {
+  display:inline-block;
+}
+
+%nio-pagination__icon {
+  display: inline-block;
+  stroke: $palette-white;
+  fill: $palette-primary;
+  vertical-align: middle;
+  margin: 0.25rem;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+%nio-pagination__icon--hidden {
+  @extend %nio-pagination__icon;
+  opacity: 0;
+}
+
+%nio-pagination__icon--prev {
+  @extend %nio-pagination__icon;
+  transform: rotate(90deg);
+}
+
+%nio-pagination__icon--next {
+  @extend %nio-pagination__icon;
+  transform: rotate(-90deg);
+}
+
+%nio-pagination__link {
+  font-size: $font-size-medium;
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 1.5rem;
+  color: $palette-black;
+  &:hover {
+    color: $palette-primary;
+    cursor: pointer;
+  }
+}
+
+%nio-pagination__link--active {
+  @extend %nio-pagination__link;
+  color: $palette-light;
+  font-size:
+  &:hover {
+    color: $palette-light;
+  }
+
+}
