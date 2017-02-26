@@ -1,8 +1,10 @@
 %nio-toggle {
-  display: block;
+  position: relative;
+  display: inline-block;
   text-align: center;
   width: 5rem;
   height: 5rem;
+  vertical-align: middle;
 }
 
 %nio-toggle__input {
@@ -13,6 +15,8 @@
   display: block;
   position: relative;
   font-size: $font-size-medium;
+  margin: 1rem auto;
+  white-space: nowrap;
 
   &::before {
     content: '';
@@ -21,10 +25,11 @@
     top: 2rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 3.3rem;
+    width: 3.6rem;
     height: 1.5rem;
-    background-color: $palette-light;
+    background-color: $palette-mid;
     border-radius: 20px;
+    transition: background-color 300ms;
   }
 
   &::after {
@@ -32,55 +37,96 @@
     display: block;
     position: absolute;
     background-color: $palette-white;
-    box-shadow: 0 0 10px 1px $palette-light;
+    box-shadow: 0 0 10px -3px $palette-mid;
     top: 2rem;
-    left: 51%;
-    width: 1.6rem;
-    height: 1.6rem;
+    left: 12%;
+    width: 1.55rem;
+    height: 1.55rem;
     border-radius: 50%;
     cursor: pointer;
-    transition: translate 300ms;
+    transition: all 300ms;
+  }
+}
+
+%nio-toggle__label--primary {
+  &::before {
+    background-color: $palette-primary;
+  }
+}
+
+%nio-toggle__label--affirmative {
+  &::before {
+    background-color: $palette-affirmative;
+  }
+}
+
+%nio-toggle__label--alternate {
+  &::before {
+    background-color: $palette-alternate;
+  }
+}
+
+%nio-toggle__label--warning {
+  &::before {
+    background-color: $palette-warning;
+  }
+}
+
+%nio-toggle__label--danger {
+  &::before {
+    background-color: $palette-danger;
   }
 }
 
 %nio-toggle__label--checked {
-  @extend %nio-toggle__label;
   &::after {
-    cursor: pointer;
-    left: 49%;
+    left: 87%;
+    transform: translateX(-100%);
+  }
+}
+
+%nio-toggle__label--checked-primary {
+  &::after {
+    left: 87%;
+    transform: translateX(-100%);
+  }
+}
+
+%nio-toggle__label--checked-affirmative {
+  &::after {
+    left: 87%;
+    transform: translateX(-100%);
+  }
+}
+
+%nio-toggle__label--checked-alternate {
+  &::after {
+    left: 87%;
+    transform: translateX(-100%);
+  }
+}
+
+%nio-toggle__label--checked-warning {
+  &::after {
+    left: 87%;
+    transform: translateX(-100%);
+  }
+}
+
+%nio-toggle__label--checked-danger {
+  &::after {
+    left: 87%;
     transform: translateX(-100%);
   }
 }
 
 %nio-toggle__label--disabled {
-  display: block;
-
-  // @extend %nio-toggle__label;
-  // color: $palette-light;
-  //
-  // &:hover {
-  //   &::before {
-  //     box-shadow: 0 0 0 1px $palette-light;
-  //   }
-  // }
-  //
-  // &::before {
-  //   box-shadow: 0 0 0 1px $palette-light;
-  //   cursor: not-allowed;
-  // }
-  //
-  // &::after {
-  //   animation: none;
-  //   background-color: transparent;
-  //   cursor: not-allowed;
-  // }
-}
-
-%nio-toggle__label--disabled-checked {
-  display: block;
-
-  // &::after {
-  //   @include fill($icon-check);
-  //   background-color: $palette-light;
-  // }
+  color: $palette-light;
+  &::before {
+    background-color: $palette-light;
+    cursor: not-allowed;
+  }
+  &::after {
+    box-shadow: 0 0 0 1px $palette-light;
+  }
 }

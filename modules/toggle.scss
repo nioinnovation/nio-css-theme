@@ -7,5 +7,17 @@
 .label { @extend %nio-toggle__label; }
 .unchecked > .label { @extend %nio-toggle__label; }
 .checked > .label { @extend %nio-toggle__label--checked; }
+.default > .label { @extend %nio-toggle__label; }
+.primary > .label { @extend %nio-toggle__label--primary; }
+.affirmative > .label { @extend %nio-toggle__label--affirmative; }
+.alternate > .label { @extend %nio-toggle__label--alternate; }
+.warning > .label { @extend %nio-toggle__label--warning; }
+.danger > .label { @extend %nio-toggle__label--danger; }
 .disabled > .label { @extend %nio-toggle__label--disabled; }
-.checked.disabled > .label { @extend %nio-toggle__label--disabled-checked; }
+.checked.disabled > .label { @extend %nio-toggle__label--disabled; }
+.checked.default > .label { @extend %nio-toggle__label--checked; }
+.checked.primary > .label { @extend %nio-toggle__label--checked-primary; }
+.checked.affirmative > .label { @extend %nio-toggle__label--checked-affirmative; }
+.checked.alternate > .label { @extend %nio-toggle__label--checked-alternate; }
+.checked.warning > .label { @extend %nio-toggle__label--checked-warning; }
+.checked.danger > .label { @extend %nio-toggle__label--checked-danger; }
