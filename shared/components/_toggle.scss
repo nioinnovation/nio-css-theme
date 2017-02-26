@@ -85,41 +85,6 @@
   }
 }
 
-%nio-toggle__label--checked-primary {
-  &::after {
-    left: 87%;
-    transform: translateX(-100%);
-  }
-}
-
-%nio-toggle__label--checked-affirmative {
-  &::after {
-    left: 87%;
-    transform: translateX(-100%);
-  }
-}
-
-%nio-toggle__label--checked-alternate {
-  &::after {
-    left: 87%;
-    transform: translateX(-100%);
-  }
-}
-
-%nio-toggle__label--checked-warning {
-  &::after {
-    left: 87%;
-    transform: translateX(-100%);
-  }
-}
-
-%nio-toggle__label--checked-danger {
-  &::after {
-    left: 87%;
-    transform: translateX(-100%);
-  }
-}
-
 %nio-toggle__label--disabled {
   color: $palette-light;
   &::before {

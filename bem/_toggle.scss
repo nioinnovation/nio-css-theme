@@ -6,16 +6,11 @@
   &__input { @extend %nio-toggle__input; }
   &__label { @extend %nio-toggle__label; }
   &__label--unchecked { @extend %nio-toggle__label; }
-  &__label--unchecked-primary { @extend %nio-toggle__label--primary; }
-  &__label--unchecked-affirmative { @extend %nio-toggle__label--affirmative; }
-  &__label--unchecked-alternate { @extend %nio-toggle__label--alternate; }
-  &__label--unchecked-warning { @extend %nio-toggle__label--warning; }
-  &__label--unchecked-danger { @extend %nio-toggle__label--danger; }
+  &__label--primary { @extend %nio-toggle__label--primary; }
+  &__label--affirmative { @extend %nio-toggle__label--affirmative; }
+  &__label--alternate { @extend %nio-toggle__label--alternate; }
+  &__label--warning { @extend %nio-toggle__label--warning; }
+  &__label--danger { @extend %nio-toggle__label--danger; }
   &__label--checked { @extend %nio-toggle__label--checked; }
-  &__label--checked-primary { @extend %nio-toggle__label--checked-primary; }
-  &__label--checked-affirmative { @extend %nio-toggle__label--checked-affirmative; }
-  &__label--checked-alternate { @extend %nio-toggle__label--checked-alternate; }
-  &__label--checked-warning { @extend %nio-toggle__label--checked-warning; }
-  &__label--checked-danger { @extend %nio-toggle__label--checked-danger; }
   &__label--disabled { @extend %nio-toggle__label--disabled; }
 }
