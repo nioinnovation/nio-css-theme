@@ -15,7 +15,7 @@ $icon-circle: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2lyY2xlIiB4bWxucz0iaH
   font-size: $font-size-medium;
   &:before {
     content: $icon-circle;
-    left: -9px;
+    left: 0;
     position: absolute;
     color: $palette-dark;
   }

@@ -51,7 +51,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
   display: inline-block;
   position: relative;
   margin-left: 1.5rem;
-  padding-left: 0.4rem;
+  padding-left: 1.3rem;
   font-size: $font-size-medium;
 
   &::before {
@@ -59,10 +59,9 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
     display: block;
     position: absolute;
     top: -1px;
-    left: -15px;
+    left: -6px;
     width: 1rem;
     height: 1rem;
-    margin: 0 0.5em 0 0;
     border-radius: 50%;
     box-shadow: 0 0 0 1px $palette-dark;
     cursor: pointer;
@@ -79,7 +78,7 @@ $icon-dash: url('data:image/svg+xml;base64, PHN2ZyBpZD0iaHlwaGVuIiB4bWxucz0iaHR0
     display: block;
     position: absolute;
     top: -1px;
-    left: -15px;
+    left: -6px;
     width: 1rem;
     height: 1rem;
     opacity: 0;
