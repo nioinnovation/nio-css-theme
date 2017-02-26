@@ -1,0 +1,12 @@
+@import "shared/components/toggle";
+
+.#{$prefix}toggle {
+  @extend %nio-toggle;
+
+  &__input { @extend %nio-toggle__input; }
+  &__label { @extend %nio-toggle__label; }
+  &__label--unchecked { @extend %nio-toggle__label; }
+  &__label--checked { @extend %nio-toggle__label--checked; }
+  &__label--disabled { @extend %nio-toggle__label--disabled; }
+  &__label--disabled-checked { @extend %nio-toggle__label--disabled-checked; }
+}
