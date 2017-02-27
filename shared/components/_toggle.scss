@@ -17,6 +17,7 @@
   font-size: $font-size-medium;
   margin: 1rem auto;
   white-space: nowrap;
+  cursor: pointer;
 
   &::before {
     content: '';
@@ -43,7 +44,6 @@
     width: 1.55rem;
     height: 1.55rem;
     border-radius: 50%;
-    cursor: pointer;
     transition: all 300ms;
   }
 }
@@ -87,9 +87,9 @@
 
 %nio-toggle__label--disabled {
   color: $palette-light;
+  cursor: not-allowed;
   &::before {
     background-color: $palette-light;
-    cursor: not-allowed;
   }
   &::after {
     box-shadow: 0 0 0 1px $palette-light;
