@@ -40,6 +40,7 @@ $top-padding: 1.25rem;
 %nio-text-input__label {
   display: block;
   position: absolute;
+  font-size: $font-size-medium;
   top: ((1rem * 2.5) / 2 + $top-padding);
   left: 1rem;
   transform: translatey(-50%);

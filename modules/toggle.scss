@@ -1,0 +1,16 @@
+@import "shared/core";
+@import "shared/components/toggle";
+
+.toggle { @extend %nio-toggle; }
+
+.input { @extend %nio-toggle__input; }
+.label { @extend %nio-toggle__label; }
+.unchecked > .label { @extend %nio-toggle__label; }
+.checked > .label { @extend %nio-toggle__label--checked; }
+.default > .label { @extend %nio-toggle__label; }
+.primary > .label { @extend %nio-toggle__label--primary; }
+.affirmative > .label { @extend %nio-toggle__label--affirmative; }
+.alternate > .label { @extend %nio-toggle__label--alternate; }
+.warning > .label { @extend %nio-toggle__label--warning; }
+.danger > .label { @extend %nio-toggle__label--danger; }
+.disabled > .label { @extend %nio-toggle__label--disabled; }
