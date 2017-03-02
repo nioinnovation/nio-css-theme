@@ -1,0 +1,33 @@
+
+%nio-heading-shared {
+  font: $font-heading;
+}
+h1 {
+  @extend %nio-heading-shared;
+  font-size: $font-size-titanic;
+}
+
+h2 {
+  @extend %nio-heading-shared;
+  font-size: $font-size-gigantic;
+}
+
+h3 {
+  @extend %nio-heading-shared;
+  font-size: $font-size-huge;
+}
+
+h4 {
+  @extend %nio-heading-shared;
+  font-size: $font-size-big;
+}
+
+h5 {
+  @extend %nio-heading-shared;
+  font-size: $font-size-large;
+}
+
+h6 {
+  @extend %nio-heading-shared;
+  font-size: $font-size-medium;
+}

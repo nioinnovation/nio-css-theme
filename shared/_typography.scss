@@ -1,15 +1,15 @@
 $font-family-sans: Lato, sans serif !default;
 $font-family-mono: monospace !default;
 
-$font-weight-sans: 400 !default;
-$font-weight-heading: 300 !default;
+$font-weight-sans: 300 !default;
+$font-weight-heading: 400 !default;
 $font-weight-mono: 400 !default;
 
 $font-line-height: 1.5 !default;
 $font-line-height-tight: (19/16) !default;
 $font-line-height-loose: 1.8 !default;
 
-$font-size-root: 12pt !default;
+$font-size-root: 14px !default;
 
 $font-ratio:         $min3 !default;
 $font-size-micro:    1rem * ($font-ratio / $font-ratio / $font-ratio / $font-ratio / $font-ratio) !default;
