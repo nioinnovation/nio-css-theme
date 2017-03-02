@@ -5,6 +5,7 @@
 
 .input { @extend %nio-toggle__input; }
 .label { @extend %nio-toggle__label; }
+.text { @extend %nio-toggle__text; }
 .unchecked > .label { @extend %nio-toggle__label; }
 .checked > .label { @extend %nio-toggle__label--checked; }
 .default > .label { @extend %nio-toggle__label; }
