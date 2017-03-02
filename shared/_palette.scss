@@ -6,9 +6,11 @@ $palette-warning: #F3BC27 !default;
 $palette-danger: #DD3B4C !default;
 
 $palette-white: #FFFFFF !default;
-$palette-light: #E6E9EE !default;
-$palette-dark:  #576265 !default;
-$palette-black: #262F31 !default;
+$palette-snow: #E6E9EE !default;
+$palette-light: #CED4DA !default;
+$palette-medium: #9DAAB1 !default;
+$palette-dark:  #566265 !default;
+$palette-black: #354042 !default;
 
 $palette-mid: mix($palette-light, $palette-dark) !default;
 $palette-shadow: rgba($palette-black, 0.25) !default;
