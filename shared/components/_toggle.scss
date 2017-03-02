@@ -1,3 +1,24 @@
+$toggle-animation: unique-id();
+
+@keyframes #{$toggle-animation} {
+  0% {
+   background-color: darken($palette-white, 5%);
+  }
+  10% {
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px rgba($palette-snow, 0.5);
+    background-color: darken($palette-white, 5%);
+  }
+  90% {
+    border-radius: 50%;
+    box-shadow: 0 0 0 13px transparentize($palette-snow, 0.2);
+  }
+  100% {
+    border-radius: 50%;
+    box-shadow: 0 0 0 18px transparent;
+  }
+}
+
 %nio-toggle {
   position: relative;
   display: block;
@@ -76,8 +97,16 @@
 }
 
 %nio-toggle__label--checked {
+  &:active {
+    background-color: red;
+    animation: $toggle-animation 200ms forwards;
+  }
   &::after {
     left: 1.4rem;
+    // &:active {
+    //   background-color: red;
+    //   animation: $toggle-animation 200ms forwards;
+    // }
   }
 }
 
