@@ -13,6 +13,7 @@ $icon-circle: url('data:image/svg+xml;base64, PHN2ZyBpZD0iY2lyY2xlIiB4bWxucz0iaH
 
 %nio-list__listItem {
   font-size: $font-size-medium;
+  font: inherit;
   &:before {
     content: $icon-circle;
     left: 0;
