@@ -61,6 +61,7 @@ $top-padding: 1.25rem;
   top:  $top-padding / 2;
   left: 0.75rem;
   font-size: $font-size-small;
+  transition: none;
 }
 
 %nio-text-input__helper {
