@@ -2,14 +2,17 @@ $palette-primary: #3CAFDA !default;
 $palette-alternate: #22537A !default;
 
 $palette-affirmative: #37C0C9 !default;
-$palette-warning: #F3BC27 !default;
+$palette-warning: #F3BC26 !default;
 $palette-danger: #DD3B4C !default;
 
-$palette-white: #FFFFFF !default;
 $palette-snow: #E6E9EE !default;
-$palette-light: #CED4DA !default;
-$palette-medium: #9DAAB1 !default;
-$palette-dark:  #566265 !default;
+$palette-white: $palette-snow !default;
+$palette-alert: #CED4DA !default;
+$palette-light: $palette-alert !default;
+$palette-zinc: #9DAAB1 !default;
+$palette-medium: $palette-zinc !default;
+$palette-slate: #576265 !default;
+$palette-dark:  $palette-slate !default;
 $palette-black: #354042 !default;
 
 $palette-mid: mix($palette-light, $palette-dark) !default;
