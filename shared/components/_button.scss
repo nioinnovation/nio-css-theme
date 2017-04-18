@@ -36,8 +36,8 @@
 %nio-button {
   @include nio-button--colorize($palette-light, $palette-black);
   font-size: $font-size-medium;
-  border-width: 1px;
-  border-style: solid;
+  background-color: #fff;
+  border: solid 1px $palette-light;
   padding: 0.25em 1em;
   min-width: 10em;
   min-height: 2.5em;
