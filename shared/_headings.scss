@@ -1,7 +1,9 @@
 
 %nio-heading-shared {
   font: $font-heading;
+  line-height: normal;
 }
+
 h1 {
   @extend %nio-heading-shared;
   font-size: $font-size-titanic;
