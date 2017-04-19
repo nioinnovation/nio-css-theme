@@ -4,7 +4,6 @@ $top-padding: 1.25rem;
 %nio-text-input {
   display: block;
   position: relative;
-  padding: 0.25rem;
   padding-top: $top-padding;
 }
 
@@ -33,7 +32,9 @@ $top-padding: 1.25rem;
 
 %nio-text-input--multiline {
   @extend %nio-text-input--common;
+  display: block;
   height: 1rem * 2.5 * 2; // twice singleline height, TODO: change this and others to distance variable
+  resize: vertical;
   width: 100%;
 }
 
