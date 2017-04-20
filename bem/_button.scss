@@ -1,6 +1,6 @@
 @import "shared/components/button";
 
-.#{$prefix}button {
+.#{$nio-bem-prefix}button {
   @extend %nio-button;
 
   a#{&} { @extend %nio-button--link; }

@@ -1,6 +1,6 @@
 @import "shared/components/link";
 
-.#{$prefix}link {
+.#{$nio-bem-prefix}link {
   @extend %nio-link;
 
   &--before { @extend %nio-link--before; }

@@ -1,0 +1,8 @@
+.#{$nio-bem-prefix}header {
+  &--primary    { @extend %nio-h1; }
+  &--secondary  { @extend %nio-h2; }
+  &--tertiary   { @extend %nio-h3; }
+  &--quaternary { @extend %nio-h4; }
+  &--quinary    { @extend %nio-h5; }
+  &--senary     { @extend %nio-h6; }
+}

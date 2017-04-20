@@ -1,6 +1,6 @@
 @import "shared/components/twofold";
 
-.#{$prefix}twofold {
+.#{$nio-bem-prefix}twofold {
   @extend %nio-twofold;
   &__header { @extend %nio-twofold__header; }
   &__heading { @extend %nio-twofold__heading; }

@@ -1,0 +1,8 @@
+%nio-horizontal-divider {
+  border: none;
+  border-top: solid 1px $palette-snow;
+}
+
+@mixin nio-dividers__global() {
+  hr { @extend %nio-horizontal-divider; }
+}
