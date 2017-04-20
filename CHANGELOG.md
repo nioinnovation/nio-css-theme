@@ -1,5 +1,14 @@
 # Change Log
 
+## [2.2.0] - 2017-04-20
+
+### Added
+- Dividers
+
+### Changed
+- Removed default padding and margin on button and text-input
+- Updated default button background and border colors
+
 ## [2.1.0] - 2017-02-14
 
 ### Added
@@ -53,5 +62,3 @@
 [2.0.3]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.2...v2.0.3
 [2.0.2]: https://github.com/nioinnovation/nio-css-theme/compare/v2.0.1...v2.0.2
 [2.0.1]: https://github.com/nioinnovation/nio-css-theme/compare/646c1b0...v2.0.1
-
-
