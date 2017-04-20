@@ -1,3 +1,6 @@
+// CSS Prefix
+$nio-bem-prefix: 'n-' !default;
+
 @import "shared/core";
 
 @import "shared/reset";
@@ -9,3 +12,5 @@
 @import "bem/link";
 @import "bem/list";
 @import "bem/loader";
+@import "bem/header";
+@import "bem/divider";

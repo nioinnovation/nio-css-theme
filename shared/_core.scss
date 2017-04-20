@@ -1,8 +1,10 @@
-// CSS Prefix
-$prefix: 'n-' !default;
-
 @import "constants";
 @import "palette";
 @import "typography";
 @import "headings";
-@import "misc";
+@import "dividers";
+
+@mixin nio-all__global() {
+  @include nio-headings__global();
+  @include nio-dividers__global();
+}

@@ -1,6 +1,6 @@
 @import "shared/components/pagination";
 
-.#{$prefix}pagination {
+.#{$nio-bem-prefix}pagination {
   @extend %nio-pagination;
 
   &__icon { @extend %nio-pagination__icon; }

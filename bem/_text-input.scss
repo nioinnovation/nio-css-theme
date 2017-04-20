@@ -1,6 +1,6 @@
 @import "shared/components/text-input";
 
-.#{$prefix}text-input {
+.#{$nio-bem-prefix}text-input {
   @extend %nio-text-input;
 
   &--singleline { @extend %nio-text-input--singleline; }

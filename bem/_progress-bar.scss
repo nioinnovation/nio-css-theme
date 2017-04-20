@@ -1,6 +1,6 @@
 @import "shared/components/progress-bar";
 
-.#{$prefix}progress-bar {
+.#{$nio-bem-prefix}progress-bar {
   @extend %nio-progress-bar;
 
   &__fill { @extend %nio-progress-bar__fill; }

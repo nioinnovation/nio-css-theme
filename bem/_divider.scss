@@ -1,0 +1,5 @@
+.#{$nio-bem-prefix}divider {
+  &--horizontal {
+    @extend %nio-horizontal-divider;
+  }
+}

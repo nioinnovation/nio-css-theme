@@ -1,6 +1,6 @@
 @import "shared/components/toggle";
 
-.#{$prefix}toggle {
+.#{$nio-bem-prefix}toggle {
   @extend %nio-toggle;
 
   &__input { @extend %nio-toggle__input; }

@@ -1,6 +1,6 @@
 @import "shared/components/checkbox";
 
-.#{$prefix}checkbox {
+.#{$nio-bem-prefix}checkbox {
   @extend %nio-checkbox;
 
   &__input { @extend %nio-checkbox__input; }

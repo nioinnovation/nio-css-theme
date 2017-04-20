@@ -1,6 +1,6 @@
 @import "shared/components/list";
 
-.#{$prefix}list {
+.#{$nio-bem-prefix}list {
   @extend %nio-list;
   &__listItem { @extend %nio-list__listItem; }
   &__listItem--numbered { @extend %nio-list__listItem--numbered; }

@@ -3,7 +3,7 @@
 @import "shared/core";
 @import 'shared/components/loader';
 
-.#{$prefix}loader {
+.#{$nio-bem-prefix}loader {
   @extend %nio-loader;
 
   &__result { @extend %nio-loader__result; }
