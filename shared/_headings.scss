@@ -4,32 +4,32 @@
   line-height: normal;
 }
 
-h1 {
+%h1 {
   @extend %nio-heading-shared;
   font-size: $font-size-titanic;
 }
 
-h2 {
+%h2 {
   @extend %nio-heading-shared;
   font-size: $font-size-gigantic;
 }
 
-h3 {
+%h3 {
   @extend %nio-heading-shared;
   font-size: $font-size-huge;
 }
 
-h4 {
+%h4 {
   @extend %nio-heading-shared;
   font-size: $font-size-big;
 }
 
-h5 {
+%h5 {
   @extend %nio-heading-shared;
   font-size: $font-size-large;
 }
 
-h6 {
+%h6 {
   @extend %nio-heading-shared;
   font-size: $font-size-medium;
 }
