@@ -74,6 +74,6 @@
   font-size: $font-size-small;
   line-height: $font-line-height-loose;
   max-height: 500px;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-top: 1px solid $palette-light;
 }
