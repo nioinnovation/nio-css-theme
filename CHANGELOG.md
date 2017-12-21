@@ -1,5 +1,11 @@
 # Change Log
 
+## [2.2.1] - 2017-12-21
+
+### Changed
+- InputText style changes: smaller border radius, no box shadow, label/helper color
+
+
 ## [2.2.0] - 2017-04-20
 
 ### Added
