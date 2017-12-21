@@ -49,7 +49,7 @@ $top-padding: 1.25rem;
 }
 
 %nio-text-input__label--with-value {
-  top:  $top-padding / 4;
+  top:  $top-padding / 2;
   left: 0.75rem;
   font-size: $font-size-small;
   color: $palette-zinc;
@@ -57,7 +57,7 @@ $top-padding: 1.25rem;
 }
 
 %nio-text-input__label--with-focus {
-  top:  $top-padding / 4;
+  top:  $top-padding / 2;
   left: 0.75rem;
   font-size: $font-size-small;
   color: $palette-primary;
@@ -68,6 +68,5 @@ $top-padding: 1.25rem;
   display: block;
   font-size: $font-size-small;
   text-align: right;
-  padding-top:  $top-padding / 4;
   padding-right: 0.5rem;
 }
