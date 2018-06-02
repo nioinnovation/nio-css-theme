@@ -4,7 +4,7 @@
   "version": "2.2.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nioinnovation/nio-scss"
+    "url": "https://github.com/nioinnovation/nio-css-theme"
   },
   "scripts": {
     "clean": "rimraf dist/",
@@ -19,7 +19,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cssnano": "^3.10.0",
-    "gulp": "gulpjs/gulp.git#4.0",
+    "gulp": "github:gulpjs/gulp#4.0",
     "gulp-clean": "^0.3.2",
     "gulp-postcss": "^6.2.0",
     "gulp-rename": "^1.2.2",
